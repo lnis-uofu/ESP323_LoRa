@@ -29,3 +29,8 @@ void app_main()
    lora_enable_crc();
    xTaskCreate(&task_tx, "task_tx", 2048, NULL, 5, NULL);
 }
+
+//hooked RST up to GPIO7 because 32 not exist on this board
+
+// DIO1 up to 6
+// DOP5 up to 5

@@ -10,7 +10,7 @@ config CS_GPIO
 config RST_GPIO
     int "RST GPIO"
     range 0 35
-    default 32
+    default 7
     help
 	Pin Number where the NRST pin of the LoRa module is connected to.
 

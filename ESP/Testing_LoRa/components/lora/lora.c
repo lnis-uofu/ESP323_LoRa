@@ -65,6 +65,8 @@
 
 #define TIMEOUT_RESET                  100
 
+
+
 static spi_device_handle_t __spi;
 
 static int __implicit;
