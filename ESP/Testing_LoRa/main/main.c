@@ -15,16 +15,16 @@ void task_tx(void *p)
 {
    for(;;) {
       vTaskDelay(pdMS_TO_TICKS(5000));
-      lora_send_packet((uint8_t*)"Hello", 5);
+      lora_send_packet((uint8_t*)"Very Nice", 9);
       ESP_LOGI(TAG, "packet sent...\n");
    }
 }
 
 void app_main()
 {
-   ESP_LOGI(TAG, "Init LoRa");
+   printf("Init LoRa\n");
    lora_init();
-   ESP_LOGI(TAG, "Set Freq");
+   printf("Set Freq\n");
    lora_set_frequency(915e6);
    lora_enable_crc();
    xTaskCreate(&task_tx, "task_tx", 2048, NULL, 5, NULL);
