@@ -4,7 +4,7 @@
 #include "lora.h"
 #include "esp_log.h"
 
-uint8_t buf[32];
+
 
 static const char *TAG = "MSG: ";
 int count = 0;
@@ -14,6 +14,7 @@ void task_rx(void *p)
    for(;;) {
       lora_receive();    // put into receive mode
       while(lora_received()) {
+         uint8_t buf[32];
          x = lora_receive_packet(buf, sizeof(buf));
          printf("Num bytes received: %d\n", x);
          buf[x] = 0;
@@ -21,6 +22,7 @@ void task_rx(void *p)
          printf("Receive msg num: %d, Msg: %s\n", count, buf);
          lora_receive();
       }
+      //printf("lora not received\n");
       vTaskDelay(1);
    }
 }

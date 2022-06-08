@@ -15,7 +15,7 @@ void task_tx(void *p)
 {
    for(;;) {
       vTaskDelay(pdMS_TO_TICKS(5000));
-      lora_send_packet((uint8_t*)"Very Nice", 9);
+      lora_send_packet((uint8_t*)"Signal Test", 11);
       ESP_LOGI(TAG, "packet sent...\n");
    }
 }
