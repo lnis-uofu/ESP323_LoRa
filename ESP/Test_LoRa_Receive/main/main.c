@@ -60,8 +60,6 @@ void task_rx(void *p)
 void app_main()
 {
    xMutex = xSemaphoreCreateMutex();
-
-
    lora_init();
    printf("lora init\n");
    configure_led();
@@ -70,6 +68,4 @@ void app_main()
    lora_enable_crc();
    xTaskCreate(&task_rx, "task_rx", 2048, NULL, 4, NULL);
    xTaskCreate(&flash_wrapper, "flash_green", 2048, NULL, 5, NULL);
-   printf("Should never get here");
-	//for (;;){}
 }
