@@ -46,6 +46,8 @@ BUILD_DIR = build
 # C sources
 C_SOURCES =  \
 Src/main.c \
+Src/system_stm32f0xx.c  \
+Src/led.c \
 Src/stm32f0xx_hal_msp.c \
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c \
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c \
@@ -62,7 +64,6 @@ Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c \
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c \
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c \
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c \
-Src/system_stm32f0xx.c  \
 lorawan/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c \
 lorawan/FreeRTOS-Kernel/croutine.c \
 lorawan/FreeRTOS-Kernel/event_groups.c \
@@ -72,6 +73,8 @@ lorawan/FreeRTOS-Kernel/stream_buffer.c \
 lorawan/FreeRTOS-Kernel/tasks.c \
 lorawan/FreeRTOS-Kernel/timers.c \
 lorawan/FreeRTOS-Kernel/portable/MemMang/heap_4.c
+
+#Src/board_init.c \
 #Src/stm32f0xx_it.c \ 
 
 # ASM sources
