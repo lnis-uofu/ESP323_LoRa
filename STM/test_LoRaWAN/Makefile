@@ -72,9 +72,8 @@ lorawan/FreeRTOS-Kernel/queue.c \
 lorawan/FreeRTOS-Kernel/stream_buffer.c \
 lorawan/FreeRTOS-Kernel/tasks.c \
 lorawan/FreeRTOS-Kernel/timers.c \
-lorawan/FreeRTOS-Kernel/portable/MemMang/heap_4.c
-
-#Src/board_init.c \
+lorawan/FreeRTOS-Kernel/portable/MemMang/heap_4.c \
+Src/board_init.c
 #Src/stm32f0xx_it.c \ 
 
 # ASM sources

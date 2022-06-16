@@ -3,7 +3,7 @@
 #include "queue.h"
 #include "stm32f0xx_hal.h"
 #include "led.h"
-//#include "board_init.h"
+#include "board_init.h"
 
 /**
  * @brief Stack size for LoRaWAN Class A task.
@@ -22,11 +22,10 @@ void SystemClock_Config(void);
 
 void vflash(void *p)
 {
-  on_LED('b');
   for(;;)
   {
-    GPIOC->ODR ^= (1 << 6);
-    GPIOC->ODR ^= (1 << 7);
+    tog_LED('r');
+    tog_LED('b');
     vTaskDelay(500 / portTICK_PERIOD_MS);
   }
   
@@ -44,11 +43,11 @@ int main( int argc,
     HAL_Init();
     SystemClock_Config();
     setup_LED();
-
+    RTC_Init();
 
     /* Add user tasks */
     xTaskCreate(&vflash, "flash", LORAWAN_CLASSA_TASK_STACK_SIZE, NULL, LORAWAN_CLASSA_TASK_PRIORITY, NULL );
-    on_LED('r');
+    //on_LED('r');
     vTaskStartScheduler();
 
     on_LED('g');
