@@ -26,7 +26,7 @@ void vflash(void *p)
   {
     tog_LED('r');
     tog_LED('b');
-    vTaskDelay(500 / portTICK_PERIOD_MS);
+    vTaskDelay(500 / portTICK_PERIOD_MS); // delay for 500 ms
   }
   
 }
