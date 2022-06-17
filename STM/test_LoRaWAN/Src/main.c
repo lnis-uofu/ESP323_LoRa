@@ -3,7 +3,7 @@
 #include "queue.h"
 #include "stm32f0xx_hal.h"
 #include "led.h"
-#include "board_init.h"
+//#include "board_init.h"
 
 /**
  * @brief Stack size for LoRaWAN Class A task.

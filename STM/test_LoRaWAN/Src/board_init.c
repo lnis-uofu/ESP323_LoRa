@@ -7,7 +7,7 @@
 #include "task.h"
 
 /* Includes for Logging task intiialization. */
-#include "iot_logging_task.h"
+//#include "iot_logging_task.h"
 
 /* Add includes for LoRaWAN. */
 #include "utilities.h"

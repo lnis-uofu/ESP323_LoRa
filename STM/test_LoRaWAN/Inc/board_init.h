@@ -37,8 +37,8 @@ uint8_t Button_WaitForPush( uint32_t timeout );
 void Led_On( void );
 void Led_Off( void );
 
-extern RTC_HandleTypeDef xHrtc;
-extern RNG_HandleTypeDef xHrng;
+//extern RTC_HandleTypeDef xHrtc;
+//extern RNG_HandleTypeDef xHrng;
 
 void board_init( void );
 
