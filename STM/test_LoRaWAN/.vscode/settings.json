@@ -1,3 +1,7 @@
 {
-    "makefile.extensionOutputFolder": "./.vscode"
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "board_init.h": "c",
+        "vl53l0x_proximity.h": "c"
+    }
 }

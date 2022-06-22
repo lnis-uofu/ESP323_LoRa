@@ -72,7 +72,8 @@ FreeRTOS-Kernel/queue.c \
 FreeRTOS-Kernel/stream_buffer.c \
 FreeRTOS-Kernel/tasks.c \
 FreeRTOS-Kernel/timers.c \
-FreeRTOS-Kernel/portable/MemMang/heap_4.c
+FreeRTOS-Kernel/portable/MemMang/heap_4.c \
+board
 
 #Src/board_init.c \
 #Src/stm32f0xx_it.c \ 
@@ -138,7 +139,8 @@ C_INCLUDES =  \
 -IDrivers/CMSIS/Device/ST/STM32F0xx/Include \
 -IDrivers/CMSIS/Include \
 -IFreeRTOS-Kernel/include \
--IFreeRTOS-Kernel/portable/GCC/ARM_CM0 
+-IFreeRTOS-Kernel/portable/GCC/ARM_CM0 \
+-Iboard
 
 
 # compile gcc flags
