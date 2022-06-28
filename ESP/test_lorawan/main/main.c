@@ -30,44 +30,20 @@
 #include "timer.h"
 #include "radio.h"
 
-#if defined( REGION_AS923 )
 
-#define RF_FREQUENCY                                923000000 // Hz
-
-#elif defined( REGION_AU915 )
+// define the frequency region
+#if defined( REGION_US915 )
 
 #define RF_FREQUENCY                                915000000 // Hz
-
-#elif defined( REGION_CN779 )
-
-#define RF_FREQUENCY                                779000000 // Hz
-
-#elif defined( REGION_EU868 )
-
-#define RF_FREQUENCY                                868000000 // Hz
-
-#elif defined( REGION_KR920 )
-
-#define RF_FREQUENCY                                920000000 // Hz
-
-#elif defined( REGION_IN865 )
-
-#define RF_FREQUENCY                                865000000 // Hz
-
-#elif defined( REGION_US915 )
-
-#define RF_FREQUENCY                                915000000 // Hz
-
-#elif defined( REGION_RU864 )
-
-#define RF_FREQUENCY                                864000000 // Hz
 
 #else
     #error "Please define a frequency band in the compiler options."
 #endif
 
+// define the output power
 #define TX_OUTPUT_POWER                             14        // dBm
 
+// define LoRa module settings
 #if defined( USE_MODEM_LORA )
 
 #define LORA_BANDWIDTH                              0         // [0: 125 kHz,
@@ -83,15 +59,6 @@
 #define LORA_SYMBOL_TIMEOUT                         5         // Symbols
 #define LORA_FIX_LENGTH_PAYLOAD_ON                  false
 #define LORA_IQ_INVERSION_ON                        false
-
-#elif defined( USE_MODEM_FSK )
-
-#define FSK_FDEV                                    25000     // Hz
-#define FSK_DATARATE                                50000     // bps
-#define FSK_BANDWIDTH                               50000     // Hz
-#define FSK_AFC_BANDWIDTH                           83333     // Hz
-#define FSK_PREAMBLE_LENGTH                         5         // Same for Tx and Rx
-#define FSK_FIX_LENGTH_PAYLOAD_ON                   false
 
 #else
     #error "Please define a modem in the compiler options."
@@ -193,20 +160,6 @@ int app_main( void )
                                    0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
 
     Radio.SetMaxPayloadLength( MODEM_LORA, BUFFER_SIZE );
-
-#elif defined( USE_MODEM_FSK )
-
-    Radio.SetTxConfig( MODEM_FSK, TX_OUTPUT_POWER, FSK_FDEV, 0,
-                                  FSK_DATARATE, 0,
-                                  FSK_PREAMBLE_LENGTH, FSK_FIX_LENGTH_PAYLOAD_ON,
-                                  true, 0, 0, 0, 3000 );
-
-    Radio.SetRxConfig( MODEM_FSK, FSK_BANDWIDTH, FSK_DATARATE,
-                                  0, FSK_AFC_BANDWIDTH, FSK_PREAMBLE_LENGTH,
-                                  0, FSK_FIX_LENGTH_PAYLOAD_ON, 0, true,
-                                  0, 0,false, true );
-
-    Radio.SetMaxPayloadLength( MODEM_FSK, BUFFER_SIZE );
 
 #else
     #error "Please define a frequency band in the compiler options."
