@@ -30,6 +30,7 @@
 #include "timer.h"
 #include "radio.h"
 
+#define FILL_ME_IN 0
 
 // define the frequency region
 #if defined( REGION_US915 )
@@ -147,7 +148,7 @@ int app_main( void )
 
     Radio.SetChannel( RF_FREQUENCY );
 
-#if defined( USE_MODEM_LORA )
+
 
     Radio.SetTxConfig( MODEM_LORA, TX_OUTPUT_POWER, 0, LORA_BANDWIDTH,
                                    LORA_SPREADING_FACTOR, LORA_CODINGRATE,
@@ -160,10 +161,6 @@ int app_main( void )
                                    0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
 
     Radio.SetMaxPayloadLength( MODEM_LORA, BUFFER_SIZE );
-
-#else
-    #error "Please define a frequency band in the compiler options."
-#endif
 
     Radio.Rx( RX_TIMEOUT_VALUE );
 

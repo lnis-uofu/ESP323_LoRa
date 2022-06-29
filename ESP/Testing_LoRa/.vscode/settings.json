@@ -14,7 +14,8 @@
     "files.associations": {
         "stdio.h": "c",
         "esp_log.h": "c",
-        "*.inc": "c"
+        "*.inc": "c",
+        "lora.h": "c"
     },
     "idf.flashType": "UART"
 }
