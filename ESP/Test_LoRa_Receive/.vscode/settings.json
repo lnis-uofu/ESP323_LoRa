@@ -33,6 +33,7 @@
         "sdkconfig.h": "c",
         "task.h": "c",
         "lora.h": "c",
-        "spi_master.h": "c"
+        "spi_master.h": "c",
+        "gpio_struct.h": "c"
     }
 }

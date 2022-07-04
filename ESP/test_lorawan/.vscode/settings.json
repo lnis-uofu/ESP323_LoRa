@@ -17,7 +17,8 @@
         "gpio.h": "c",
         "sx1276-board.h": "c",
         "xtensa_api.h": "c",
-        "board.h": "c"
+        "board.h": "c",
+        "gpio_types.h": "c"
     },
     "idf.flashType": "UART"
 }
