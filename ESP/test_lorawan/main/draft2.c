@@ -157,17 +157,13 @@ void OnRxError( void );
 /**
  * Main application entry point.
  */
-#include "debug.c"
-int app_main( void )
+int draft( void )
 {
     bool isMaster = true;
     uint8_t i;
 
     // Target board initialization
     BoardInitMcu( );
-    printf("BoardInitMcu works\n");
-    
-    // currently empty
     BoardInitPeriph( );
 
     // Radio initialization
@@ -176,11 +172,8 @@ int app_main( void )
     RadioEvents.TxTimeout = OnTxTimeout;
     RadioEvents.RxTimeout = OnRxTimeout;
     RadioEvents.RxError = OnRxError;
-    
-    printf("RadioEvents is initialized\n");
 
     Radio.Init( &RadioEvents );
-    printf("Radio Init is complete\n");
 
     Radio.SetChannel( RF_FREQUENCY );
 

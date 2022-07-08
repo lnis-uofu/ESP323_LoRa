@@ -19,16 +19,16 @@ void task_wrapper(void *p)
     while(1) 
     {
         GpioWrite(&g, 0);
-        vTaskDelay(100 / portTICK_PERIOD_MS);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
         GpioWrite(&g, 1);
-        vTaskDelay(100 / portTICK_PERIOD_MS);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
     }
     //pin = (int) g.pin;
     //printf("%d\n", pin);
     //printf("hi\n");
 }
 
-void draft()
+void potato()
 {
     
     // figure out stack depth and width necessary to run this stuff
