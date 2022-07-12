@@ -20,7 +20,8 @@
         "board.h": "c",
         "gpio_types.h": "c",
         "spi_types.h": "c",
-        "spi_master.h": "c"
+        "spi_master.h": "c",
+        "timer.h": "c"
     },
     "idf.flashType": "UART"
 }
