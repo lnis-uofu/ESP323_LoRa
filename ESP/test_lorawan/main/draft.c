@@ -32,7 +32,7 @@ void task_wrapper(void *p)
     //printf("hi\n");
 }
 
-void app_main()
+void draft()
 {
     SpiInit(&SX1276.Spi, SPI_2, RADIO_MOSI, RADIO_MISO, RADIO_SCLK, 15);
 
@@ -40,7 +40,7 @@ void app_main()
 
     printf("spi init complete \n");
 
-    uint16_t outData = ('H' << 8) | 'I'; // this should take 16 clocks (1 bit per cycle)
+    uint16_t outData = 258;//('A' << 8) | 'I'; // this should take 16 clocks (1 bit per cycle)
 
     uint16_t ret; 
     while(1)
