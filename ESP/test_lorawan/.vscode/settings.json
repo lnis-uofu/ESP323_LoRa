@@ -21,7 +21,9 @@
         "gpio_types.h": "c",
         "spi_types.h": "c",
         "spi_master.h": "c",
-        "timer.h": "c"
+        "timer.h": "c",
+        "*.ipp": "c",
+        "xtensa_context.h": "c"
     },
     "idf.flashType": "UART"
 }
