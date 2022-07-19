@@ -165,13 +165,13 @@ int app_main( void )
     RadioEvents.RxTimeout = OnRxTimeout;
     RadioEvents.RxError = OnRxError;
 
-    printf("radio events setup\n");
+    
 
     // CHANGE THE FREQUENCY TO 915MHZ
     Radio.Init( &RadioEvents );
-    printf("radio init done\n");
+    
     Radio.SetChannel( RF_FREQUENCY );
-    printf("set channel complete\n");
+    
 
 #if defined( USE_MODEM_LORA )
 
@@ -179,23 +179,24 @@ int app_main( void )
                                    LORA_SPREADING_FACTOR, LORA_CODINGRATE,
                                    LORA_PREAMBLE_LENGTH, LORA_FIX_LENGTH_PAYLOAD_ON,
                                    true, 0, 0, LORA_IQ_INVERSION_ON, 3000 );
-    printf("set tx config done\n");
+    
 
     Radio.SetRxConfig( MODEM_LORA, LORA_BANDWIDTH, LORA_SPREADING_FACTOR,
                                    LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
                                    LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
                                    0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
-    printf("set rf config done\n");
+    
 
     Radio.SetMaxPayloadLength( MODEM_LORA, BUFFER_SIZE );
-    printf("Set max payload complete\n");
+    
 
 #else
     #error "Please define a frequency band in the compiler options."
 #endif
 
-    Radio.Rx( RX_TIMEOUT_VALUE );
-
+    //Radio.Rx( RX_TIMEOUT_VALUE );
+    
+    Radio.SetTxContinuousWave( 915000000, TX_OUTPUT_POWER,  3000);
     // Send the next PING frame
     Buffer[0] = 'P';
     Buffer[1] = 'I';
@@ -209,9 +210,10 @@ int app_main( void )
     }
     DelayMs( 1 );
     
+
     while( 1 )
     {
-        printf("loop\n");
+        
         DelayMs(20);
         Radio.Send( Buffer, BufferSize );
         BoardLowPowerHandler( );
