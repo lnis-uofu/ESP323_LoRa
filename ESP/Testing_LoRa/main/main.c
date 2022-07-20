@@ -23,6 +23,7 @@ void task_tx(void *p)
 
 void app_main()
 {
+   printf("Check what the spi clock freq is set at\n");
    printf("Init LoRa\n");
    lora_init(); // clock was initially 9MHz
    printf("Set Freq\n");

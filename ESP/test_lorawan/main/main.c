@@ -26,6 +26,8 @@
 #include "delay.h"
 #include "timer.h"
 #include "radio.h"
+#include "esp_log.h"
+
 
 #if defined( REGION_AS923 )
 
@@ -149,6 +151,9 @@ void OnRxError( void );
  * Main application entry point.
  */
 #include "/Users/michael/Documents/Senior_Project/ESP/test_lorawan/main/debug.c"
+static const char *TAG = "MSG: ";
+
+/* CHECK WHAT THE SPI CLCK FREQ IS */
 int app_main( void )
 {
     //bool isMaster = true;
