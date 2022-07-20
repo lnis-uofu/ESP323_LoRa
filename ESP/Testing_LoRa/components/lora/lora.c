@@ -340,7 +340,7 @@ lora_init(void)
    assert(ret == ESP_OK);
 
    spi_device_interface_config_t dev = {
-      .clock_speed_hz = 9000000,
+      .clock_speed_hz = 250000,//9000000,
       .mode = 0,
       .spics_io_num = -1,
       .queue_size = 1,
