@@ -23,7 +23,8 @@
         "spi_master.h": "c",
         "timer.h": "c",
         "*.ipp": "c",
-        "xtensa_context.h": "c"
+        "xtensa_context.h": "c",
+        "lora.h": "c"
     },
     "idf.flashType": "UART"
 }

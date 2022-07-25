@@ -28,42 +28,16 @@
 #include "radio.h"
 #include "esp_log.h"
 
+//#include "lora.c"
 
-#if defined( REGION_AS923 )
-
-#define RF_FREQUENCY                                923000000 // Hz
-
-#elif defined( REGION_AU915 )
+#if defined( REGION_US915 )
 
 #define RF_FREQUENCY                                915000000 // Hz
-
-#elif defined( REGION_CN779 )
-
-#define RF_FREQUENCY                                779000000 // Hz
-
-#elif defined( REGION_EU868 )
-
-#define RF_FREQUENCY                                868000000 // Hz
-
-#elif defined( REGION_KR920 )
-
-#define RF_FREQUENCY                                920000000 // Hz
-
-#elif defined( REGION_IN865 )
-
-#define RF_FREQUENCY                                865000000 // Hz
-
-#elif defined( REGION_US915 )
-
-#define RF_FREQUENCY                                915000000 // Hz
-
-#elif defined( REGION_RU864 )
-
-#define RF_FREQUENCY                                864000000 // Hz
 
 #else
     #error "Please define a frequency band in the compiler options."
 #endif
+
 
 #define TX_OUTPUT_POWER                             14        // dBm
 
@@ -83,28 +57,16 @@
 #define LORA_FIX_LENGTH_PAYLOAD_ON                  false
 #define LORA_IQ_INVERSION_ON                        false
 
-#elif defined( USE_MODEM_FSK )
-
-#define FSK_FDEV                                    25000     // Hz
-#define FSK_DATARATE                                50000     // bps
-#define FSK_BANDWIDTH                               50000     // Hz
-#define FSK_AFC_BANDWIDTH                           83333     // Hz
-#define FSK_PREAMBLE_LENGTH                         5         // Same for Tx and Rx
-#define FSK_FIX_LENGTH_PAYLOAD_ON                   false
-
 #else
     #error "Please define a modem in the compiler options."
 #endif
-
-
 
 #define RX_TIMEOUT_VALUE                            1000
 #define BUFFER_SIZE                                 64 // Define the payload size here
 
 
 
-uint16_t BufferSize = BUFFER_SIZE;
-uint8_t Buffer[BUFFER_SIZE];
+
 
 //States_t State = LOWPOWER;
 
@@ -201,26 +163,34 @@ int app_main( void )
 
     //Radio.Rx( RX_TIMEOUT_VALUE );
     
-    Radio.SetTxContinuousWave( 915000000, TX_OUTPUT_POWER,  3000);
+    //Radio.SetTxContinuousWave( 915000000, TX_OUTPUT_POWER,  3000);
+    
+    uint16_t BufferSize = 1;//BUFFER_SIZE;
+    uint8_t Buffer[BufferSize];//[BUFFER_SIZE];
     // Send the next PING frame
-    Buffer[0] = 'P';
-    Buffer[1] = 'I';
-    Buffer[2] = 'N';
-    Buffer[3] = 'G';
+    Buffer[0] = 'M';
+    //Buffer[1] = 'A';
+    //Buffer[2] = 'N';
+    //Buffer[3] = 'G';
+    /*
     // We fill the buffer with numbers for the payload
     int i =0;
     for( i = 4; i < BufferSize; i++ )
     {
         Buffer[i] = i - 4;
     }
+    */
     DelayMs( 1 );
     
 
     while( 1 )
     {
         
-        DelayMs(20);
+        DelayMs(1);
         Radio.Send( Buffer, BufferSize );
+        //lora_send_packet((uint8_t*)"B", 1);
+        //lora_write_reg(0x0d, 0);
+        DelayMs(1);
         BoardLowPowerHandler( );
 
     }
