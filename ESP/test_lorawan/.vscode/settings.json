@@ -24,7 +24,9 @@
         "timer.h": "c",
         "*.ipp": "c",
         "xtensa_context.h": "c",
-        "lora.h": "c"
+        "lora.h": "c",
+        "condition_variable": "c",
+        "future": "c"
     },
     "idf.flashType": "UART"
 }

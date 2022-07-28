@@ -112,7 +112,7 @@ void OnRxError( void );
 /**
  * Main application entry point.
  */
-#include "/Users/michael/Documents/Senior_Project/ESP/test_lorawan/main/debug.c"
+//#include "/Users/michael/Documents/Senior_Project/ESP/test_lorawan/main/debug.c"
 static const char *TAG = "MSG: ";
 
 /* CHECK WHAT THE SPI CLCK FREQ IS */
@@ -123,6 +123,7 @@ int app_main( void )
 
     // Target board initialization
     BoardInitMcu( );
+    // TODO: CHECK THE DIVIDER FOR THE TIMERS
     BoardInitPeriph( );
 
     // Radio initialization
@@ -165,13 +166,13 @@ int app_main( void )
     
     //Radio.SetTxContinuousWave( 915000000, TX_OUTPUT_POWER,  3000);
     
-    uint16_t BufferSize = 1;//BUFFER_SIZE;
+    uint16_t BufferSize = 4;//BUFFER_SIZE;
     uint8_t Buffer[BufferSize];//[BUFFER_SIZE];
     // Send the next PING frame
-    Buffer[0] = 'M';
-    //Buffer[1] = 'A';
-    //Buffer[2] = 'N';
-    //Buffer[3] = 'G';
+    Buffer[0] = 'B';
+    Buffer[1] = 'I';
+    Buffer[2] = 'K';
+    Buffer[3] = 'E';
     /*
     // We fill the buffer with numbers for the payload
     int i =0;
@@ -182,16 +183,19 @@ int app_main( void )
     */
     DelayMs( 1 );
     
-
+    //uint8_t *word = (uint8_t *)"Great Success";
+    Radio.Rx( RX_TIMEOUT_VALUE );
     while( 1 )
     {
         
         DelayMs(1);
         Radio.Send( Buffer, BufferSize );
+        
+        //Radio.Send( word, 13 );
         //lora_send_packet((uint8_t*)"B", 1);
         //lora_write_reg(0x0d, 0);
-        DelayMs(1);
-        BoardLowPowerHandler( );
+        //DelayMs(1);
+        //BoardLowPowerHandler( );
 
     }
 }
@@ -205,9 +209,11 @@ void OnTxDone( void )
 void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
 {
     /*
+    ESP_LOGI(TAG, "Rx Done\n");
     Radio.Sleep( );
-    BufferSize = size;
-    memcpy( Buffer, payload, BufferSize );
+    
+    //BufferSize = size;
+    //memcpy( Buffer, payload, size );
     RssiValue = rssi;
     SnrValue = snr;
     //State = RX;
@@ -225,9 +231,11 @@ void OnTxTimeout( void )
 void OnRxTimeout( void )
 {
     /*
+    ESP_LOGI(TAG, "Rx Timeout\n");
     Radio.Sleep( );
-    //State = RX_TIMEOUT;
     */
+    //State = RX_TIMEOUT;
+    
 }
 
 void OnRxError( void )
