@@ -162,7 +162,7 @@ int app_main( void )
     #error "Please define a frequency band in the compiler options."
 #endif
 
-    //Radio.Rx( RX_TIMEOUT_VALUE );
+   
     
     //Radio.SetTxContinuousWave( 915000000, TX_OUTPUT_POWER,  3000);
     
@@ -184,31 +184,44 @@ int app_main( void )
     DelayMs( 1 );
     
     //uint8_t *word = (uint8_t *)"Great Success";
+    /*
     Radio.Rx( RX_TIMEOUT_VALUE );
     while( 1 )
     {
         
-        DelayMs(1);
-        Radio.Send( Buffer, BufferSize );
+        //DelayMs(1);
+        //Radio.Send( Buffer, BufferSize );
         
         //Radio.Send( word, 13 );
         //lora_send_packet((uint8_t*)"B", 1);
         //lora_write_reg(0x0d, 0);
-        //DelayMs(1);
+        DelayMs(1);
         //BoardLowPowerHandler( );
 
     }
+    */
+
+   
+   ESP_LOGI(TAG, "Before While Loop\n");
+   while(1)
+   {
+    Radio.Rx( RX_TIMEOUT_VALUE );
+    DelayMs(1);
+   }
+   
 }
 
 void OnTxDone( void )
 {
+    ESP_LOGI(TAG, "Tx Done\n");
+    Radio.Sleep( );
     //Radio.Sleep( );
     //State = TX;
 }
 
 void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
 {
-    /*
+    
     ESP_LOGI(TAG, "Rx Done\n");
     Radio.Sleep( );
     
@@ -217,7 +230,7 @@ void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
     RssiValue = rssi;
     SnrValue = snr;
     //State = RX;
-    */
+    
 }
 
 void OnTxTimeout( void )
@@ -230,10 +243,10 @@ void OnTxTimeout( void )
 
 void OnRxTimeout( void )
 {
-    /*
+    
     ESP_LOGI(TAG, "Rx Timeout\n");
     Radio.Sleep( );
-    */
+    
     //State = RX_TIMEOUT;
     
 }
