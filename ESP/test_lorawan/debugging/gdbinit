@@ -1,0 +1,3 @@
+file ../build/test_lorawan.elf
+target extended-remote :3333
+mon reset halt

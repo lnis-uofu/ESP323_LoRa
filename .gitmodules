@@ -1,0 +1,6 @@
+[submodule "ESP/LoRaMac-node"]
+	path = ESP/LoRaMac-node
+	url = https://github.com/Lora-net/LoRaMac-node.git
+[submodule "ESP/test_lorawan/components/LoRaMac-node"]
+	path = ESP/test_lorawan/components/LoRaMac-node
+	url = git@github.com:MichaelKeyser/LoRaMac-node.git

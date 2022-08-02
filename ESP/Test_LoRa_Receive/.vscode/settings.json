@@ -7,7 +7,7 @@
     "idf.openOcdConfigs": [
         "board/esp32s3-builtin.cfg"
     ],
-    "idf.port": "/dev/cu.SLAB_USBtoUART5",
+    "idf.port": "/dev/cu.usbserial-14330",
     "idf.pythonBinPath": "/Users/michael/.espressif/python_env/idf4.4_py3.8_env/bin/python",
     "idf.toolsPath": "/Users/michael/.espressif",
     "idf.flashType": "UART",
@@ -31,6 +31,9 @@
         "limits": "c",
         "sstream": "c",
         "sdkconfig.h": "c",
-        "task.h": "c"
+        "task.h": "c",
+        "lora.h": "c",
+        "spi_master.h": "c",
+        "gpio_struct.h": "c"
     }
 }

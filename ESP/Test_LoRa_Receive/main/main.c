@@ -59,6 +59,7 @@ void task_rx(void *p)
 
 void app_main()
 {
+   printf("Check what the spi clock freq is set at\n");
    xMutex = xSemaphoreCreateMutex();
    lora_init();
    printf("lora init\n");

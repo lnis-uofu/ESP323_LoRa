@@ -14,16 +14,18 @@ static const char *TAG = "MSG: ";
 void task_tx(void *p)
 {
    for(;;) {
-      vTaskDelay(pdMS_TO_TICKS(5000));
-      lora_send_packet((uint8_t*)"Signal Test", 11);
-      ESP_LOGI(TAG, "packet sent...\n");
+      //vTaskDelay(pdMS_TO_TICKS(1));
+      ESP_LOGI(TAG, "Sending Packet...\n");
+      lora_send_packet((uint8_t*)"Hello", 5);
+      
    }
 }
 
 void app_main()
 {
+   printf("Check what the spi clock freq is set at\n");
    printf("Init LoRa\n");
-   lora_init();
+   lora_init(); // clock was initially 9MHz
    printf("Set Freq\n");
    lora_set_frequency(915e6);
    lora_enable_crc();

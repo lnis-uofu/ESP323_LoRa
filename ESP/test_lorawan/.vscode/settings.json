@@ -1,0 +1,40 @@
+{
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "idf.adapterTargetName": "esp32s3",
+    "idf.customExtraPaths": "/Users/michael/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin:/Users/michael/.espressif/tools/xtensa-esp32s2-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32s2-elf/bin:/Users/michael/.espressif/tools/xtensa-esp32s3-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32s3-elf/bin:/Users/michael/.espressif/tools/riscv32-esp-elf/esp-2021r2-patch3-8.4.0/riscv32-esp-elf/bin:/Users/michael/.espressif/tools/esp32ulp-elf/2.28.51-esp-20191205/esp32ulp-elf-binutils/bin:/Users/michael/.espressif/tools/esp32s2ulp-elf/2.28.51-esp-20191205/esp32s2ulp-elf-binutils/bin:/Users/michael/.espressif/tools/cmake/3.20.3/CMake.app/Contents/bin:/Users/michael/.espressif/tools/openocd-esp32/v0.11.0-esp32-20211220/openocd-esp32/bin:/Users/michael/.espressif/tools/ninja/1.10.2",
+    "idf.customExtraVars": "{\"OPENOCD_SCRIPTS\":\"/Users/michael/.espressif/tools/openocd-esp32/v0.11.0-esp32-20211220/openocd-esp32/share/openocd/scripts\"}",
+    "idf.espIdfPath": "/Users/michael/esp/esp-idf",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "idf.port": "/dev/cu.usbserial-14340",
+    "idf.pythonBinPath": "/Users/michael/.espressif/python_env/idf4.4_py3.8_env/bin/python",
+    "idf.toolsPath": "/Users/michael/.espressif",
+    "files.associations": {
+        "utilities.h": "c",
+        "radio.h": "c",
+        "gpio-board.h": "c",
+        "gpio.h": "c",
+        "sx1276-board.h": "c",
+        "xtensa_api.h": "c",
+        "board.h": "c",
+        "gpio_types.h": "c",
+        "spi_types.h": "c",
+        "spi_master.h": "c",
+        "timer.h": "c",
+        "*.ipp": "c",
+        "xtensa_context.h": "c",
+        "lora.h": "c",
+        "condition_variable": "c",
+        "future": "c",
+        "sx1276.h": "c",
+        "freertos.h": "c",
+        "array": "c",
+        "bitset": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "regex": "c",
+        "utility": "c"
+    },
+    "idf.flashType": "UART"
+}
