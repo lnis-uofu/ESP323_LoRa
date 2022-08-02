@@ -34,7 +34,8 @@
         "string_view": "c",
         "initializer_list": "c",
         "regex": "c",
-        "utility": "c"
+        "utility": "c",
+        "lmhandler.h": "c"
     },
     "idf.flashType": "UART"
 }
