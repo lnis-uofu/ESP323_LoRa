@@ -28,6 +28,9 @@
 #include "radio.h"
 #include "esp_log.h"
 
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+
 //#include "lora.c"
 
 #if defined( REGION_US915 )
@@ -115,8 +118,33 @@ void OnRxError( void );
 //#include "/Users/michael/Documents/Senior_Project/ESP/test_lorawan/main/debug.c"
 static const char *TAG = "MSG: ";
 
+/*
+void task_send(void *p)
+{
+    uint16_t BufferSize = 4;//BUFFER_SIZE;
+    uint8_t Buffer[BufferSize];//[BUFFER_SIZE];
+    // Send the next PING frame
+    Buffer[0] = 'B';
+    Buffer[1] = 'I';
+    Buffer[2] = 'K';
+    Buffer[3] = 'E';
+   for(;;) {
+        //DelayMs(1);
+        //rtc_wdt_feed();
+        Radio.Send( Buffer, BufferSize );
+        
+        //Radio.Send( word, 13 );
+        //lora_send_packet((uint8_t*)"B", 1);
+        //lora_write_reg(0x0d, 0);
+        DelayMs(100);
+        break;
+        //BoardLowPowerHandler( );
+   }
+}
+*/
+
 /* CHECK WHAT THE SPI CLCK FREQ IS */
-int app_main( void )
+void app_main( void )
 {
     //bool isMaster = true;
     //uint8_t i;
@@ -137,7 +165,7 @@ int app_main( void )
 
     // CHANGE THE FREQUENCY TO 915MHZ
     Radio.Init( &RadioEvents );
-    
+    ESP_LOGI(TAG, "After Init\n");
     Radio.SetChannel( RF_FREQUENCY );
     
 
@@ -166,6 +194,7 @@ int app_main( void )
     
     //Radio.SetTxContinuousWave( 915000000, TX_OUTPUT_POWER,  3000);
     
+    
     uint16_t BufferSize = 4;//BUFFER_SIZE;
     uint8_t Buffer[BufferSize];//[BUFFER_SIZE];
     // Send the next PING frame
@@ -173,6 +202,7 @@ int app_main( void )
     Buffer[1] = 'I';
     Buffer[2] = 'K';
     Buffer[3] = 'E';
+    
     /*
     // We fill the buffer with numbers for the payload
     int i =0;
@@ -186,34 +216,48 @@ int app_main( void )
     //uint8_t *word = (uint8_t *)"Great Success";
     /*
     Radio.Rx( RX_TIMEOUT_VALUE );
+    */
+   ESP_LOGI(TAG, "Before While Loop\n");
+    
     while( 1 )
     {
         
         //DelayMs(1);
-        //Radio.Send( Buffer, BufferSize );
+        Radio.Send( Buffer, BufferSize );
         
         //Radio.Send( word, 13 );
         //lora_send_packet((uint8_t*)"B", 1);
         //lora_write_reg(0x0d, 0);
-        DelayMs(1);
+        DelayMs(100);
+        break;
         //BoardLowPowerHandler( );
 
     }
+    /*
+    BaseType_t xReturned;
+    xReturned = xTaskCreate(&task_send, "task_send", 2048, NULL, 5, NULL);
+    if( xReturned == pdPASS )
+    {
+        //The task was created.  Use the task's handle to delete the task. 
+        ESP_LOGI(TAG, "Task Successfully Created\n");
+    }
     */
 
-   
+   /*
    ESP_LOGI(TAG, "Before While Loop\n");
    while(1)
    {
     Radio.Rx( RX_TIMEOUT_VALUE );
     DelayMs(1);
    }
+   */
    
 }
 
+
 void OnTxDone( void )
 {
-    ESP_LOGI(TAG, "Tx Done\n");
+    //ESP_LOGI(TAG, "Tx Done\n");
     Radio.Sleep( );
     //Radio.Sleep( );
     //State = TX;

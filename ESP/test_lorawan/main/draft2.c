@@ -157,7 +157,7 @@ void OnRxError( void );
 /**
  * Main application entry point.
  */
-int draft( void )
+int draft2( void )
 {
     bool isMaster = true;
     uint8_t i;

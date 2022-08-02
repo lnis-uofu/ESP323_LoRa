@@ -27,7 +27,8 @@
         "lora.h": "c",
         "condition_variable": "c",
         "future": "c",
-        "sx1276.h": "c"
+        "sx1276.h": "c",
+        "freertos.h": "c"
     },
-    "idf.flashType": "JTAG"
+    "idf.flashType": "UART"
 }

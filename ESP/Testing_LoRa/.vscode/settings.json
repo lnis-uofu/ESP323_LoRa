@@ -8,7 +8,7 @@
         "interface/ftdi/esp32_devkitj_v1.cfg",
         "target/esp32s3.cfg"
     ],
-    "idf.port": "/dev/cu.usbserial-14330",
+    "idf.port": "/dev/cu.usbserial-14340",
     "idf.pythonBinPath": "/Users/michael/.espressif/python_env/idf4.4_py3.8_env/bin/python",
     "idf.toolsPath": "/Users/michael/.espressif",
     "files.associations": {
