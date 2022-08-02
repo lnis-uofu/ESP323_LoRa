@@ -30,8 +30,9 @@
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "sx1276.h"
 
-//#include "lora.c"
+int DIO0Irq;
 
 #if defined( REGION_US915 )
 
@@ -142,10 +143,13 @@ void task_send(void *p)
    }
 }
 */
-
+#define BUFFER_SIZE 64
+uint16_t BufferSize = BUFFER_SIZE;
+uint8_t  Buffer[BUFFER_SIZE];//[BufferSize];//[BUFFER_SIZE];
 /* CHECK WHAT THE SPI CLCK FREQ IS */
 void app_main( void )
 {
+    DIO0Irq = 0;
     //bool isMaster = true;
     //uint8_t i;
 
@@ -195,13 +199,14 @@ void app_main( void )
     //Radio.SetTxContinuousWave( 915000000, TX_OUTPUT_POWER,  3000);
     
     
-    uint16_t BufferSize = 4;//BUFFER_SIZE;
-    uint8_t Buffer[BufferSize];//[BUFFER_SIZE];
+    
     // Send the next PING frame
+    /*
     Buffer[0] = 'B';
     Buffer[1] = 'I';
     Buffer[2] = 'K';
     Buffer[3] = 'E';
+    */
     
     /*
     // We fill the buffer with numbers for the payload
@@ -214,22 +219,31 @@ void app_main( void )
     DelayMs( 1 );
     
     //uint8_t *word = (uint8_t *)"Great Success";
-    /*
-    Radio.Rx( RX_TIMEOUT_VALUE );
-    */
-   ESP_LOGI(TAG, "Before While Loop\n");
+    
+    
+    //Radio.Rx( 0 );
+    
+    ESP_LOGI(TAG, "Before While Loop\n");
     
     while( 1 )
     {
-        
+        Radio.Rx( RX_TIMEOUT_VALUE );
+        //Radio.Rx( 0 );
         //DelayMs(1);
-        Radio.Send( Buffer, BufferSize );
-        
+        //Radio.Send( Buffer, BufferSize );
+        if(DIO0Irq == 1)
+        {
+            ESP_LOGI(TAG, "irq == 1");
+            DIO0Irq = 0;
+            SX1276OnDio0Irq( NULL );
+            ESP_LOGI(TAG, "After IRQ");
+
+        }
         //Radio.Send( word, 13 );
         //lora_send_packet((uint8_t*)"B", 1);
         //lora_write_reg(0x0d, 0);
-        DelayMs(100);
-        break;
+        DelayMs(1);
+        
         //BoardLowPowerHandler( );
 
     }
@@ -257,7 +271,7 @@ void app_main( void )
 
 void OnTxDone( void )
 {
-    //ESP_LOGI(TAG, "Tx Done\n");
+    ESP_LOGI(TAG, "Tx Done\n");
     Radio.Sleep( );
     //Radio.Sleep( );
     //State = TX;
@@ -269,10 +283,11 @@ void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
     ESP_LOGI(TAG, "Rx Done\n");
     Radio.Sleep( );
     
-    //BufferSize = size;
-    //memcpy( Buffer, payload, size );
-    RssiValue = rssi;
-    SnrValue = snr;
+    BufferSize = size;
+    memcpy( Buffer, payload, size);
+    printf("%s\n", Buffer);
+    //RssiValue = rssi;
+    //SnrValue = snr;
     //State = RX;
     
 }

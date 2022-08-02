@@ -42,11 +42,11 @@ void draft()
 
     uint16_t outData = 258;//('A' << 8) | 'I'; // this should take 16 clocks (1 bit per cycle)
 
-    uint16_t ret; 
+    //uint16_t ret; 
     while(1)
     {
         //printf("Start of Tranmission\n");
-        ret = SpiInOut(&SX1276.Spi, outData);
+        SpiInOut(&SX1276.Spi, outData);
         //SpiInOut(&SX1276.Spi, (uint16_t)'!');
         //printf("End of Transmission \n");
         vTaskDelay(1000 / portTICK_PERIOD_MS);

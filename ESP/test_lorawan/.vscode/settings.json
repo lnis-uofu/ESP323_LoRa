@@ -28,7 +28,13 @@
         "condition_variable": "c",
         "future": "c",
         "sx1276.h": "c",
-        "freertos.h": "c"
+        "freertos.h": "c",
+        "array": "c",
+        "bitset": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "regex": "c",
+        "utility": "c"
     },
     "idf.flashType": "UART"
 }
