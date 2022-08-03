@@ -37,6 +37,9 @@
 #include "CayenneLpp.h"
 #include "LmHandlerMsgDisplay.h"
 
+#include "sx1276.h"
+int DIO0Irq;
+
 
 #define ACTIVE_REGION LORAMAC_REGION_US915
 
@@ -248,13 +251,13 @@ static volatile uint32_t TxPeriodicity = 0;
 /*!
  * LED GPIO pins objects
  */
-extern Gpio_t Led1; // Tx
-extern Gpio_t Led2; // Rx
+Gpio_t Led1; // Tx
+Gpio_t Led2; // Rx
 
 /*!
  * UART object used for command line interface handling
  */
-extern Uart_t Uart2;
+Uart_t Uart2;
 
 /*!
  * Main application entry point.
