@@ -251,13 +251,13 @@ static volatile uint32_t TxPeriodicity = 0;
 /*!
  * LED GPIO pins objects
  */
-Gpio_t Led1; // Tx
-Gpio_t Led2; // Rx
+//Gpio_t Led1; // Tx
+//Gpio_t Led2; // Rx
 
 /*!
  * UART object used for command line interface handling
  */
-Uart_t Uart2;
+//Uart_t Uart2;
 
 /*!
  * Main application entry point.
@@ -308,7 +308,7 @@ void app_main( void )
     while( 1 )
     {
         // Process characters sent over the command line interface
-        CliProcess( &Uart2 );
+        //CliProcess( &Uart2 );
 
         // Processes the LoRaMac events
         LmHandlerProcess( );
@@ -391,7 +391,7 @@ static void OnRxData( LmHandlerAppData_t* appData, LmHandlerRxParams_t* params )
     }
 
     // Switch LED 2 ON for each received downlink
-    GpioWrite( &Led2, 1 );
+    //GpioWrite( &Led2, 1 );
     TimerStart( &Led2Timer );
 }
 
@@ -469,7 +469,7 @@ static void PrepareTxFrame( void )
     if( LmHandlerSend( &AppData, LmHandlerParams.IsTxConfirmed ) == LORAMAC_HANDLER_SUCCESS )
     {
         // Switch LED 1 ON
-        GpioWrite( &Led1, 1 );
+        //GpioWrite( &Led1, 1 );
         TimerStart( &Led1Timer );
     }
 }
@@ -554,7 +554,7 @@ static void OnLed1TimerEvent( void* context )
 {
     TimerStop( &Led1Timer );
     // Switch LED 1 OFF
-    GpioWrite( &Led1, 0 );
+    //GpioWrite( &Led1, 0 );
 }
 
 /*!
@@ -564,7 +564,7 @@ static void OnLed2TimerEvent( void* context )
 {
     TimerStop( &Led2Timer );
     // Switch LED 2 OFF
-    GpioWrite( &Led2, 0 );
+    //GpioWrite( &Led2, 0 );
 }
 
 /*!
@@ -572,7 +572,7 @@ static void OnLed2TimerEvent( void* context )
  */
 static void OnLedBeaconTimerEvent( void* context )
 {
-    GpioWrite( &Led2, 1 );
+    //GpioWrite( &Led2, 1 );
     TimerStart( &Led2Timer );
 
     TimerStart( &LedBeaconTimer );

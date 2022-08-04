@@ -12,6 +12,9 @@ add_compile_definitions(USE_MODEM_LORA)
 # in debug mode at the moment
 add_compile_definitions(DEBUG_MODE)
 
+# software se
+add_compile_definitions(SOFT_SE)
+
 
 set(EXTRA_COMPONENT_DIRS components)
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
