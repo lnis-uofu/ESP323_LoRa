@@ -7,7 +7,7 @@
     "idf.openOcdConfigs": [
         "board/esp32s3-builtin.cfg"
     ],
-    "idf.port": "/dev/cu.usbserial-14340",
+    "idf.port": "/dev/cu.usbserial-14330",
     "idf.pythonBinPath": "/Users/michael/.espressif/python_env/idf4.4_py3.8_env/bin/python",
     "idf.toolsPath": "/Users/michael/.espressif",
     "files.associations": {
@@ -35,7 +35,12 @@
         "initializer_list": "c",
         "regex": "c",
         "utility": "c",
-        "lmhandler.h": "c"
+        "lmhandler.h": "c",
+        "nvs.h": "c",
+        "nvs_flash.h": "c",
+        "esp_partition.h": "c",
+        "esp_system.h": "c",
+        "rtc-board.h": "c"
     },
     "idf.flashType": "UART"
 }

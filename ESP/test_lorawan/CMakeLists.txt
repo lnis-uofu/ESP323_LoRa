@@ -15,7 +15,11 @@ add_compile_definitions(DEBUG_MODE)
 # software se
 add_compile_definitions(SOFT_SE)
 
+add_compile_definitions(SECURE_ELEMENT_PRE_PROVISIONED)
+
 
 set(EXTRA_COMPONENT_DIRS components)
+
+
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(test_lorawan)
