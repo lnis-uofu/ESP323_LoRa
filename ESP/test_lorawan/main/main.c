@@ -37,6 +37,8 @@
 #include "CayenneLpp.h"
 #include "LmHandlerMsgDisplay.h"
 
+#include "delay.h"
+
 #include "sx1276.h"
 int DIO0Irq;
 
@@ -119,6 +121,7 @@ typedef enum
  * User application data
  */
 static uint8_t AppDataBuffer[LORAWAN_APP_DATA_BUFFER_MAX_SIZE];
+
 
 /*!
  * User application data structure
@@ -264,6 +267,9 @@ static volatile uint32_t TxPeriodicity = 0;
  */
 void app_main( void )
 {
+    AppDataBuffer[0] = 'H';
+    AppDataBuffer[1] = 'I';
+
     BoardInitMcu( );
     BoardInitPeriph( );
 
@@ -303,10 +309,13 @@ void app_main( void )
 
     LmHandlerJoin( );
 
+    printf("after join \n");
+
     StartTxProcess( LORAMAC_HANDLER_TX_ON_TIMER );
 
     while( 1 )
     {
+        //printf("start of loop /n");
         // Process characters sent over the command line interface
         //CliProcess( &Uart2 );
 
@@ -316,18 +325,23 @@ void app_main( void )
         // Process application uplinks management
         UplinkProcess( );
 
+        /*
         CRITICAL_SECTION_BEGIN( );
         if( IsMacProcessPending == 1 )
         {
             // Clear flag and prevent MCU to go into low power modes.
             IsMacProcessPending = 0;
+            // wake up here
         }
         else
         {
             // The MCU wakes up through events
-            //BoardLowPowerHandler( );
+            BoardLowPowerHandler( );
         }
         CRITICAL_SECTION_END( );
+        */
+        //printf("end of loop \n");
+        DelayMs(10);
     }
 }
 
@@ -452,6 +466,7 @@ static void PrepareTxFrame( void )
 {
     if( LmHandlerIsBusy( ) == true )
     {
+        printf("handler is busy so returning early\n");
         return;
     }
 
@@ -470,6 +485,7 @@ static void PrepareTxFrame( void )
     {
         // Switch LED 1 ON
         //GpioWrite( &Led1, 1 );
+        printf("send success\n");
         TimerStart( &Led1Timer );
     }
 }
@@ -504,6 +520,7 @@ static void UplinkProcess( void )
     CRITICAL_SECTION_END( );
     if( isPending == 1 )
     {
+        printf("preparing tx frame\n");
         PrepareTxFrame( );
     }
 }
