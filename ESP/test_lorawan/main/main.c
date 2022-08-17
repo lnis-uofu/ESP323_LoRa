@@ -325,7 +325,7 @@ void app_main( void )
         else
         {
             // The MCU wakes up through events
-            BoardLowPowerHandler( );
+            //BoardLowPowerHandler( );
         }
         CRITICAL_SECTION_END( );
     }

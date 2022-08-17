@@ -40,7 +40,8 @@
         "nvs_flash.h": "c",
         "esp_partition.h": "c",
         "esp_system.h": "c",
-        "rtc-board.h": "c"
+        "rtc-board.h": "c",
+        "time.h": "c"
     },
     "idf.flashType": "UART"
 }
