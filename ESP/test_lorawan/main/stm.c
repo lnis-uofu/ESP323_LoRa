@@ -22,8 +22,8 @@
 /*! \file periodic-uplink/NucleoL073/main.c */
 
 #include <stdio.h>
-#include "firmwareVersion.h"
-#include "githubVersion.h"
+#include "../firmwareVersion.h"
+#include "../../common/githubVersion.h"
 #include "utilities.h"
 #include "board.h"
 #include "gpio.h"
@@ -36,14 +36,6 @@
 #include "LmhpCompliance.h"
 #include "CayenneLpp.h"
 #include "LmHandlerMsgDisplay.h"
-
-#include "delay.h"
-
-#include "sx1276.h"
-int DIO0Irq;
-
-
-#define ACTIVE_REGION LORAMAC_REGION_US915
 
 #ifndef ACTIVE_REGION
 
@@ -122,7 +114,6 @@ typedef enum
  */
 static uint8_t AppDataBuffer[LORAWAN_APP_DATA_BUFFER_MAX_SIZE];
 
-
 /*!
  * User application data structure
  */
@@ -146,17 +137,17 @@ static TimerEvent_t TxTimer;
 /*!
  * Timer to handle the state of LED1
  */
-//static TimerEvent_t Led1Timer;
+static TimerEvent_t Led1Timer;
 
 /*!
  * Timer to handle the state of LED2
  */
-//static TimerEvent_t Led2Timer;
+static TimerEvent_t Led2Timer;
 
 /*!
  * Timer to handle the state of LED beacon indicator
  */
-//static TimerEvent_t LedBeaconTimer;
+static TimerEvent_t LedBeaconTimer;
 
 static void OnMacProcessNotify( void );
 static void OnNvmDataChange( LmHandlerNvmContextStates_t state, uint16_t size );
@@ -189,17 +180,17 @@ static void OnTxTimerEvent( void* context );
 /*!
  * Function executed on Led 1 Timeout event
  */
-//static void OnLed1TimerEvent( void* context );
+static void OnLed1TimerEvent( void* context );
 
 /*!
  * Function executed on Led 2 Timeout event
  */
-//static void OnLed2TimerEvent( void* context );
+static void OnLed2TimerEvent( void* context );
 
 /*!
  * \brief Function executed on Beacon timer Timeout event
  */
-//static void OnLedBeaconTimerEvent( void* context );
+static void OnLedBeaconTimerEvent( void* context );
 
 static LmHandlerCallbacks_t LmHandlerCallbacks =
 {
@@ -254,26 +245,22 @@ static volatile uint32_t TxPeriodicity = 0;
 /*!
  * LED GPIO pins objects
  */
-//Gpio_t Led1; // Tx
-//Gpio_t Led2; // Rx
+extern Gpio_t Led1; // Tx
+extern Gpio_t Led2; // Rx
 
 /*!
  * UART object used for command line interface handling
  */
-//Uart_t Uart2;
+extern Uart_t Uart2;
 
 /*!
  * Main application entry point.
  */
-void app_main( void )
+int not_main_is_stm( void )
 {
-    //AppDataBuffer[0] = 'H';
-    //AppDataBuffer[1] = 'I';
-
     BoardInitMcu( );
     BoardInitPeriph( );
 
-    /*
     TimerInit( &Led1Timer, OnLed1TimerEvent );
     TimerSetValue( &Led1Timer, 25 );
 
@@ -282,7 +269,6 @@ void app_main( void )
 
     TimerInit( &LedBeaconTimer, OnLedBeaconTimerEvent );
     TimerSetValue( &LedBeaconTimer, 5000 );
-    */
 
     // Initialize transmission periodicity variable
     TxPeriodicity = APP_TX_DUTYCYCLE + randr( -APP_TX_DUTYCYCLE_RND, APP_TX_DUTYCYCLE_RND );
@@ -311,54 +297,31 @@ void app_main( void )
 
     LmHandlerJoin( );
 
-    printf("after join \n");
+    StartTxProcess( LORAMAC_HANDLER_TX_ON_TIMER );
 
-    StartTxProcess( LORAMAC_HANDLER_TX_ON_TIMER ); // waso n timer
-
-    int flag;
     while( 1 )
     {
-        CRITICAL_SECTION_BEGIN();
-        flag = DIO0Irq;
-        if(flag)
-        {
-            DIO0Irq = 0;
-        }
-        CRITICAL_SECTION_END();
-        if(flag)
-        {
-            printf("invoke handler\n");
-            SX1276OnDio0Irq(NULL);
-            printf("after handler\n");
-        }
-        
-        //printf("start of loop /n");
         // Process characters sent over the command line interface
-        //CliProcess( &Uart2 );
+        CliProcess( &Uart2 );
 
         // Processes the LoRaMac events
         LmHandlerProcess( );
 
         // Process application uplinks management
-        UplinkProcess( ); // FIX THE ICNORRECT CHECKING I CHANGED
+        UplinkProcess( );
 
-        {
-        CRITICAL_SECTION_BEGIN();
+        CRITICAL_SECTION_BEGIN( );
         if( IsMacProcessPending == 1 )
         {
             // Clear flag and prevent MCU to go into low power modes.
             IsMacProcessPending = 0;
-            // wake up here
         }
         else
         {
             // The MCU wakes up through events
-            //BoardLowPowerHandler( );
+            BoardLowPowerHandler( );
         }
-        CRITICAL_SECTION_END();
-        }
-        //printf("end of loop \n");
-        DelayMs(10);
+        CRITICAL_SECTION_END( );
     }
 }
 
@@ -402,7 +365,6 @@ static void OnJoinRequest( LmHandlerJoinParams_t* params )
 
 static void OnTxData( LmHandlerTxParams_t* params )
 {
-    printf("OnTxData\n");
     DisplayTxUpdate( params );
 }
 
@@ -423,8 +385,8 @@ static void OnRxData( LmHandlerAppData_t* appData, LmHandlerRxParams_t* params )
     }
 
     // Switch LED 2 ON for each received downlink
-    //GpioWrite( &Led2, 1 );
-    //TimerStart( &Led2Timer );
+    GpioWrite( &Led2, 1 );
+    TimerStart( &Led2Timer );
 }
 
 static void OnClassChange( DeviceClass_t deviceClass )
@@ -447,13 +409,13 @@ static void OnBeaconStatusChange( LoRaMacHandlerBeaconParams_t* params )
     {
         case LORAMAC_HANDLER_BEACON_RX:
         {
-            //TimerStart( &LedBeaconTimer );
+            TimerStart( &LedBeaconTimer );
             break;
         }
         case LORAMAC_HANDLER_BEACON_LOST:
         case LORAMAC_HANDLER_BEACON_NRX:
         {
-            //TimerStop( &LedBeaconTimer );
+            TimerStop( &LedBeaconTimer );
             break;
         }
         default:
@@ -482,13 +444,10 @@ static void OnSysTimeUpdate( void )
  */
 static void PrepareTxFrame( void )
 {
-    
     if( LmHandlerIsBusy( ) == true )
     {
-        printf("handler is busy so returning early\n");
         return;
     }
-    
 
     uint8_t channel = 0;
 
@@ -504,9 +463,8 @@ static void PrepareTxFrame( void )
     if( LmHandlerSend( &AppData, LmHandlerParams.IsTxConfirmed ) == LORAMAC_HANDLER_SUCCESS )
     {
         // Switch LED 1 ON
-        //GpioWrite( &Led1, 1 );
-        printf("send success\n");
-        //TimerStart( &Led1Timer );
+        GpioWrite( &Led1, 1 );
+        TimerStart( &Led1Timer );
     }
 }
 
@@ -540,7 +498,6 @@ static void UplinkProcess( void )
     CRITICAL_SECTION_END( );
     if( isPending == 1 )
     {
-        printf("preparing tx frame\n");
         PrepareTxFrame( );
     }
 }
@@ -587,36 +544,30 @@ static void OnTxTimerEvent( void* context )
 /*!
  * Function executed on Led 1 Timeout event
  */
-/*
 static void OnLed1TimerEvent( void* context )
 {
     TimerStop( &Led1Timer );
     // Switch LED 1 OFF
-    //GpioWrite( &Led1, 0 );
+    GpioWrite( &Led1, 0 );
 }
-*/
 
 /*!
  * Function executed on Led 2 Timeout event
  */
-/*
 static void OnLed2TimerEvent( void* context )
 {
     TimerStop( &Led2Timer );
     // Switch LED 2 OFF
-    //GpioWrite( &Led2, 0 );
+    GpioWrite( &Led2, 0 );
 }
-*/
 
 /*!
  * \brief Function executed on Beacon timer Timeout event
  */
-/*
 static void OnLedBeaconTimerEvent( void* context )
 {
-    //GpioWrite( &Led2, 1 );
+    GpioWrite( &Led2, 1 );
     TimerStart( &Led2Timer );
 
     TimerStart( &LedBeaconTimer );
 }
-*/

@@ -147,7 +147,7 @@ void task_send(void *p)
 uint16_t BufferSize = BUFFER_SIZE;
 uint8_t  Buffer[BUFFER_SIZE];//[BufferSize];//[BUFFER_SIZE];
 /* CHECK WHAT THE SPI CLCK FREQ IS */
-void not_app_main( void )
+void app_main( void )
 {
     DIO0Irq = 0;
     //bool isMaster = true;
@@ -181,7 +181,7 @@ void not_app_main( void )
                                    true, 0, 0, LORA_IQ_INVERSION_ON, 3000 );
     
 
-    Radio.SetRxConfig( MODEM_LORA, LORA_BANDWIDTH, LORA_SPREADING_FACTOR,
+    Radio.SetRxConfig( MODEM_LORA, LORA_BANDWIDTH, 10, //LORA_SPREADING_FACTOR,
                                    LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
                                    LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
                                    0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
@@ -201,12 +201,12 @@ void not_app_main( void )
     
     
     // Send the next PING frame
-    
+    /*
     Buffer[0] = 'B';
     Buffer[1] = 'I';
     Buffer[2] = 'K';
     Buffer[3] = 'E';
-    
+    */
     
     /*
     // We fill the buffer with numbers for the payload
@@ -228,11 +228,11 @@ void not_app_main( void )
     while( 1 )
     {
         //Radio.Rx( RX_TIMEOUT_VALUE );
-        //Radio.Rx( 0 );
+        Radio.Rx( 0 );
         //DelayMs(1);
-        Radio.Send( Buffer, BufferSize );
-        ESP_LOGI(TAG, "after send");
-        /*
+        //Radio.Send( Buffer, BufferSize );
+        //ESP_LOGI(TAG, "after send");
+        
         if(DIO0Irq == 1)
         {
             ESP_LOGI(TAG, "irq == 1");
@@ -241,11 +241,12 @@ void not_app_main( void )
             ESP_LOGI(TAG, "After IRQ");
 
         }
-        */
+        
         //Radio.Send( word, 13 );
         //lora_send_packet((uint8_t*)"B", 1);
         //lora_write_reg(0x0d, 0);
-        DelayMs(10);
+        
+        
         
         //BoardLowPowerHandler( );
 
@@ -288,7 +289,8 @@ void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
     
     BufferSize = size;
     memcpy( Buffer, payload, size);
-    printf("%s\n", Buffer);
+    printf("Buffer is: %s\n", Buffer);
+    
     //RssiValue = rssi;
     //SnrValue = snr;
     //State = RX;

@@ -14,7 +14,7 @@ static const char *TAG = "MSG: ";
 void task_tx(void *p)
 {
    for(;;) {
-      //vTaskDelay(pdMS_TO_TICKS(1));
+      vTaskDelay(pdMS_TO_TICKS(100));
       ESP_LOGI(TAG, "Sending Packet...\n");
       lora_send_packet((uint8_t*)"Hello", 5);
       
