@@ -64,7 +64,8 @@ void app_main()
    lora_init();
    printf("lora init\n");
    configure_led();
-   lora_set_frequency(915e6);
+   //lora_set_frequency(915e6);
+   lora_set_frequency(905300000);
    printf("Setup complete\n");
    lora_enable_crc();
    xTaskCreate(&task_rx, "task_rx", 2048, NULL, 4, NULL);

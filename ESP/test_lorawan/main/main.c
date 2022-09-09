@@ -267,8 +267,8 @@ static volatile uint32_t TxPeriodicity = 0;
  */
 void app_main( void )
 {
-    //AppDataBuffer[0] = 'H';
-    //AppDataBuffer[1] = 'I';
+    //AppDataBuffer[0] = NULL;
+    //AppDataBuffer[1] = NULL;
 
     BoardInitMcu( );
     BoardInitPeriph( );
@@ -302,6 +302,34 @@ void app_main( void )
         }
     }
 
+    /*
+    #ifdef DEBUG_MODE
+
+    #define TX_OUTPUT_POWER                             14        // dBm
+    #define LORA_BANDWIDTH                              0         // [0: 125 kHz,
+                                                              //  1: 250 kHz,
+                                                              //  2: 500 kHz,
+                                                              //  3: Reserved]
+    #define LORA_SPREADING_FACTOR                       7         // [SF7..SF12]
+    #define LORA_CODINGRATE                             1         // [1: 4/5,
+                                                                    //  2: 4/6,
+                                                                    //  3: 4/7,
+                                                                    //  4: 4/8]
+    #define LORA_PREAMBLE_LENGTH                        8         // Same for Tx and Rx
+    #define LORA_SYMBOL_TIMEOUT                         5         // Symbols
+    #define LORA_FIX_LENGTH_PAYLOAD_ON                  false
+    #define LORA_IQ_INVERSION_ON                        false
+    
+    
+    Radio.SetChannel( 915000000 );
+    Radio.SetTxConfig( MODEM_LORA, TX_OUTPUT_POWER, 0, LORA_BANDWIDTH,
+                                   LORA_SPREADING_FACTOR, LORA_CODINGRATE,
+                                   LORA_PREAMBLE_LENGTH, LORA_FIX_LENGTH_PAYLOAD_ON,
+                                   true, 0, 0, LORA_IQ_INVERSION_ON, 3000 );
+    Radio.SetMaxPayloadLength( MODEM_LORA, 64 );
+    #endif
+    */
+
     // Set system maximum tolerated rx error in milliseconds
     LmHandlerSetSystemMaxRxError( 20 );
 
@@ -316,6 +344,9 @@ void app_main( void )
     StartTxProcess( LORAMAC_HANDLER_TX_ON_TIMER ); // waso n timer
 
     int flag;
+
+    
+
     while( 1 )
     {
         CRITICAL_SECTION_BEGIN();
@@ -332,15 +363,21 @@ void app_main( void )
             printf("after handler\n");
         }
         
+        //uint8_t *word = (uint8_t *)"Great Success";
+        //uint8_t *word = (uint8_t *)"Z";
+        //Radio.Send( word, 1 );
+        DelayMs(100);
+        
         //printf("start of loop /n");
         // Process characters sent over the command line interface
         //CliProcess( &Uart2 );
 
         // Processes the LoRaMac events
-        LmHandlerProcess( );
+        
+        LmHandlerProcess( ); 
 
         // Process application uplinks management
-        UplinkProcess( ); // FIX THE ICNORRECT CHECKING I CHANGED
+        UplinkProcess( ); 
 
         {
         CRITICAL_SECTION_BEGIN();

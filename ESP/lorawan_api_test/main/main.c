@@ -170,7 +170,10 @@ void app_main( void )
     // CHANGE THE FREQUENCY TO 915MHZ
     Radio.Init( &RadioEvents );
     ESP_LOGI(TAG, "After Init\n");
-    Radio.SetChannel( RF_FREQUENCY );
+    
+    //Radio.SetChannel( RF_FREQUENCY );
+    Radio.SetChannel( 905300000 );
+    //Radio.SetChannel(902900000); // here for debugging LoRaWAN
     
 
 #if defined( USE_MODEM_LORA )
@@ -181,7 +184,7 @@ void app_main( void )
                                    true, 0, 0, LORA_IQ_INVERSION_ON, 3000 );
     
 
-    Radio.SetRxConfig( MODEM_LORA, LORA_BANDWIDTH, 10, //LORA_SPREADING_FACTOR,
+    Radio.SetRxConfig( MODEM_LORA, LORA_BANDWIDTH, LORA_SPREADING_FACTOR,
                                    LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
                                    LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
                                    0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
@@ -289,8 +292,12 @@ void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
     
     BufferSize = size;
     memcpy( Buffer, payload, size);
-    printf("Buffer is: %s\n", Buffer);
-    
+    printf("Size is %d: \n", size);
+    for(int b = 0; b < size; b++)
+    {
+        printf("%02x-", Buffer[b]);
+    }
+    printf("\n");
     //RssiValue = rssi;
     //SnrValue = snr;
     //State = RX;

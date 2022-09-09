@@ -14,7 +14,7 @@ static const char *TAG = "MSG: ";
 void task_tx(void *p)
 {
    for(;;) {
-      vTaskDelay(pdMS_TO_TICKS(100));
+      vTaskDelay(pdMS_TO_TICKS(1000));
       ESP_LOGI(TAG, "Sending Packet...\n");
       lora_send_packet((uint8_t*)"Hello", 5);
       
@@ -27,7 +27,8 @@ void app_main()
    printf("Init LoRa\n");
    lora_init(); // clock was initially 9MHz
    printf("Set Freq\n");
-   lora_set_frequency(915e6);
+   //lora_set_frequency(915e6);
+   lora_set_frequency(905300000);
    lora_enable_crc();
    xTaskCreate(&task_tx, "task_tx", 2048, NULL, 5, NULL);
 }
