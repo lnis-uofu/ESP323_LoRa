@@ -302,7 +302,7 @@ void app_main( void )
         }
     }
 
-    /*
+    
     #ifdef DEBUG_MODE
 
     #define TX_OUTPUT_POWER                             14        // dBm
@@ -321,14 +321,14 @@ void app_main( void )
     #define LORA_IQ_INVERSION_ON                        false
     
     
-    Radio.SetChannel( 915000000 );
+    Radio.SetChannel( 905300000 );
     Radio.SetTxConfig( MODEM_LORA, TX_OUTPUT_POWER, 0, LORA_BANDWIDTH,
                                    LORA_SPREADING_FACTOR, LORA_CODINGRATE,
                                    LORA_PREAMBLE_LENGTH, LORA_FIX_LENGTH_PAYLOAD_ON,
                                    true, 0, 0, LORA_IQ_INVERSION_ON, 3000 );
     Radio.SetMaxPayloadLength( MODEM_LORA, 64 );
     #endif
-    */
+    
 
     // Set system maximum tolerated rx error in milliseconds
     LmHandlerSetSystemMaxRxError( 20 );
