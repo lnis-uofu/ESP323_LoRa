@@ -41,7 +41,6 @@ void task_rx(void *p)
 {
    int x;
    for(;;) {
-      lora_receive();    // put into receive mode
       while(lora_received()) {
          x = lora_receive_packet(buf, sizeof(buf));
          printf("Num bytes received: %d\n", x);
@@ -65,9 +64,12 @@ void app_main()
    printf("lora init\n");
    configure_led();
    //lora_set_frequency(915e6);
-   lora_set_frequency(905300000);
+   //lora_set_frequency(905300000);
+   lora_set_frequency(927500000);
+   //lora_set_frequency(923300000);
    printf("Setup complete\n");
    lora_enable_crc();
+   lora_receive();    // put into receive mode
    xTaskCreate(&task_rx, "task_rx", 2048, NULL, 4, NULL);
    xTaskCreate(&flash_wrapper, "flash_green", 2048, NULL, 5, NULL);
 }

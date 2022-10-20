@@ -303,7 +303,7 @@ void app_main( void )
     }
 
     
-    #ifdef DEBUG_MODE
+    #if 0
 
     #define TX_OUTPUT_POWER                             14        // dBm
     #define LORA_BANDWIDTH                              0         // [0: 125 kHz,
@@ -321,11 +321,18 @@ void app_main( void )
     #define LORA_IQ_INVERSION_ON                        false
     
     
-    Radio.SetChannel( 905300000 );
+    //Radio.SetChannel( 905300000 );
+    //Radio.SetChannel(9039)
     Radio.SetTxConfig( MODEM_LORA, TX_OUTPUT_POWER, 0, LORA_BANDWIDTH,
                                    LORA_SPREADING_FACTOR, LORA_CODINGRATE,
                                    LORA_PREAMBLE_LENGTH, LORA_FIX_LENGTH_PAYLOAD_ON,
                                    true, 0, 0, LORA_IQ_INVERSION_ON, 3000 );
+
+    Radio.SetRxConfig( MODEM_LORA, LORA_BANDWIDTH, LORA_SPREADING_FACTOR,
+                                   LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
+                                   LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
+                                   0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
+
     Radio.SetMaxPayloadLength( MODEM_LORA, 64 );
     #endif
     
@@ -368,7 +375,7 @@ void app_main( void )
         //Radio.Send( word, 1 );
         DelayMs(100);
         
-        //printf("start of loop /n");
+        //printf("start of loop \n");
         // Process characters sent over the command line interface
         //CliProcess( &Uart2 );
 
@@ -390,6 +397,7 @@ void app_main( void )
         else
         {
             // The MCU wakes up through events
+            //printf("board low power handler reached\n");
             //BoardLowPowerHandler( );
         }
         CRITICAL_SECTION_END();
@@ -445,6 +453,7 @@ static void OnTxData( LmHandlerTxParams_t* params )
 
 static void OnRxData( LmHandlerAppData_t* appData, LmHandlerRxParams_t* params )
 {
+    printf("OnRxData\n");
     DisplayRxUpdate( appData, params );
 
     switch( appData->Port )

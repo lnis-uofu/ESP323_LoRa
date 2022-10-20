@@ -20,18 +20,6 @@ add_compile_definitions(SECURE_ELEMENT_PRE_PROVISIONED)
 
 set(EXTRA_COMPONENT_DIRS components)
 
-#if(NOT DEV_NONCE_MACRO)
-    #message(STATUS "NOT!!!!!!!!!!!!!!!!!!!!!!!\n")
-    #set(dev_nonce 39)
-#else()
-    #message(STATUS "SETTING EXPRESSION !!!!!!!!!!!!!!!!!!!!")
-    #math(EXPR dev_nonce "${dev_nonce} + 1")
-#endif()
-
-add_compile_definitions(DEV_NONCE_MACRO=${dev_nonce})
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-#include(/Users/michael/esp/esp-idf/tools/cmake/project.cmake)
-
-project(test_lorawan)
-
+project(lorawan_api_test_snd)

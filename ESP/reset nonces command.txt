@@ -1,0 +1,1 @@
+ttn-lw-cli end-devices set test-lorawan-mk eui-70b3d57ed0054681 --resets-join-nonces

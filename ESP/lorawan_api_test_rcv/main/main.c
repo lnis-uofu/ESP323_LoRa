@@ -143,7 +143,7 @@ void task_send(void *p)
    }
 }
 */
-#define BUFFER_SIZE 64
+#define BUFFER_SIZE 128
 uint16_t BufferSize = BUFFER_SIZE;
 uint8_t  Buffer[BUFFER_SIZE];//[BufferSize];//[BUFFER_SIZE];
 /* CHECK WHAT THE SPI CLCK FREQ IS */
@@ -172,27 +172,40 @@ void app_main( void )
     ESP_LOGI(TAG, "After Init\n");
     
     //Radio.SetChannel( RF_FREQUENCY );
-    Radio.SetChannel( 905300000 );
-    //Radio.SetChannel(902900000); // here for debugging LoRaWAN
+    //Radio.SetChannel( 905300000 );
+    Radio.SetChannel(927500000);
+    //Radio.SetChannel(923300000);
+    //Radio.SetChannel(927500000); // here for debugging LoRaWAN
     
 
 #if defined( USE_MODEM_LORA )
 
+    /*
     Radio.SetTxConfig( MODEM_LORA, TX_OUTPUT_POWER, 0, LORA_BANDWIDTH,
                                    LORA_SPREADING_FACTOR, LORA_CODINGRATE,
                                    LORA_PREAMBLE_LENGTH, LORA_FIX_LENGTH_PAYLOAD_ON,
                                    true, 0, 0, LORA_IQ_INVERSION_ON, 3000 );
+    */
     
-
+    /*
     Radio.SetRxConfig( MODEM_LORA, LORA_BANDWIDTH, LORA_SPREADING_FACTOR,
                                    LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
                                    LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
                                    0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
+    */                               
+    
+    
+    Radio.SetRxConfig( MODEM_LORA, 2, 7,
+                                   LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
+                                   LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
+                                   0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
+    
     
 
     Radio.SetMaxPayloadLength( MODEM_LORA, BUFFER_SIZE );
     
-
+    Radio.SetChannel(927500000);
+    
 #else
     #error "Please define a frequency band in the compiler options."
 #endif
@@ -228,22 +241,25 @@ void app_main( void )
     
     ESP_LOGI(TAG, "Before While Loop\n");
     
+    //Radio.Rx( 0 );
+
     while( 1 )
     {
-        //Radio.Rx( RX_TIMEOUT_VALUE );
+        
         Radio.Rx( 0 );
+        
         //DelayMs(1);
         //Radio.Send( Buffer, BufferSize );
         //ESP_LOGI(TAG, "after send");
         
-        if(DIO0Irq == 1)
+        while(DIO0Irq != 1)
         {
-            ESP_LOGI(TAG, "irq == 1");
-            DIO0Irq = 0;
-            SX1276OnDio0Irq( NULL );
-            ESP_LOGI(TAG, "After IRQ");
-
+            DelayMs(10);
         }
+        ESP_LOGI(TAG, "irq == 1");
+        DIO0Irq = 0;
+        SX1276OnDio0Irq( NULL );
+        ESP_LOGI(TAG, "After IRQ");
         
         //Radio.Send( word, 13 );
         //lora_send_packet((uint8_t*)"B", 1);
@@ -252,6 +268,7 @@ void app_main( void )
         
         
         //BoardLowPowerHandler( );
+        
 
     }
     /*
@@ -306,6 +323,7 @@ void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
 
 void OnTxTimeout( void )
 {
+    printf("OnTxTimeout\n");
     /*
     Radio.Sleep( );
     //State = TX_TIMEOUT;
@@ -324,6 +342,7 @@ void OnRxTimeout( void )
 
 void OnRxError( void )
 {
+    printf("OnRxError\n");
     /*
     Radio.Sleep( );
     //State = RX_ERROR;

@@ -28,7 +28,11 @@ void app_main()
    lora_init(); // clock was initially 9MHz
    printf("Set Freq\n");
    //lora_set_frequency(915e6);
-   lora_set_frequency(905300000);
+   //lora_set_frequency(905300000);
+   lora_set_frequency(927500000);
+   //lora_set_frequency(923300000);
+   lora_set_spreading_factor(7);
+   lora_set_bandwidth(500000);
    lora_enable_crc();
    xTaskCreate(&task_tx, "task_tx", 2048, NULL, 5, NULL);
 }
