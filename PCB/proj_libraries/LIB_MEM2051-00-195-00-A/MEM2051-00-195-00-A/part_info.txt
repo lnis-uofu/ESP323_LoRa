@@ -1,0 +1,9 @@
+Manufacturer=GCT (GLOBAL CONNECTOR TECHNOLOGY)
+PartNumber=MEM2051-00-195-00-A
+PartCategory=Connector
+PackageCategory=Other
+PinCount=13
+Version=1.7
+Released=2021-04-15 17:09:14
+Downloaded=2022-10-25 16:49:05
+3D=Y

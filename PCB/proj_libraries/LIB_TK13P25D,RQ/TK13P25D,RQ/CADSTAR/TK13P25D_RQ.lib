@@ -1,0 +1,15 @@
+.TK13P25D_RQ :1 ;Pb-F POWER MOSFET TRANSISTOR DPAK-OS PD=96W F=1MHZ
+TK13P25DRQ
+*STM Q
+*NGS
+*PLB 1="G" 2="D" 3="S"
+*MXP 3
+*DFN TK13P25D_RQ
+~!Mouser Part Number (757-TK13P25DRQ)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Toshiba/TK13P25DRQ/?qs=B6kkDfuK7%2FAQ0ksZyBxdyg%3D%3D)
+~!Manufacturer_Name (Toshiba)
+~!Manufacturer_Part_Number (TK13P25D,RQ)
+~!Link Datasheet (https://toshiba.semicon-storage.com/ap-en/semiconductor/design-development/package/detail.DPAK.html)
+~!Height (2.4mm)
+TK13P25D_RQ
+1.1!U 2.1!U 3.1!U 

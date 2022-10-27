@@ -1,0 +1,16 @@
+.M20-7820542 :1 ;Headers & Wire Housings 5 PIN SIL VERTICAL SOCKET GOLD+TIN
+RHDR5W70P0X254_1X5_1310X250X865P
+*STM J
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5"
+*MXP 5
+*DFN M20-7820542
+~!Mouser Part Number (855-M20-7820542)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Harwin/M20-7820542?qs=vF78I%252BjhbY9JoekBTXVWnQ%3D%3D)
+~!Manufacturer_Name (Harwin)
+~!Manufacturer_Part_Number (M20-7820542)
+~!Link Datasheet (https://cdn.harwin.com/pdfs/M20-782.pdf)
+~!Height (8.65mm)
+~!3D_Model (M20-7820542)
+M20-7820542
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 

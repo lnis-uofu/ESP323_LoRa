@@ -1,0 +1,172 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "TK13P25D_RQ"
+   (description "Pb-F POWER MOSFET TRANSISTOR DPAK-OS PD=96W F=1MHZ")
+   (family "TRX")
+   (package "TK13P25DRQ")
+   (attribute "Datasheet Link" "https://toshiba.semicon-storage.com/ap-en/semiconductor/design-development/package/detail.DPAK.html")
+   (attribute "Geometry.Height" "2.4mm")
+   (attribute "Mouser Part Number" "757-TK13P25DRQ")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Toshiba/TK13P25DRQ/?qs=B6kkDfuK7%2FAQ0ksZyBxdyg%3D%3D")
+   (attribute "Manufacturer_Name" "Toshiba")
+   (attribute "Manufacturer_Part_Number" "TK13P25D,RQ")
+   (gate
+    (symbol "TK13P25D_RQ")
+    (pin "G" 1 PS)
+    (pin "D" 2 PS)
+    (pin "S" 3 PS)
+   )
+  )
+  (symbol "TK13P25D_RQ"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (circle (pt 400 100) (pt 100 100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 100) (pt 300 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 200) (pt 300 300))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 100 0) (pt 200 0) (pt 200 200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 100) (pt 230 100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 200) (pt 230 200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 0) (pt 300 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 220) (pt 230 180))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 -20) (pt 230 20))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 80) (pt 230 120))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt 230 100) (pt 270 120) (pt 270 80) (pt 230 100))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 80 10) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 300 400) (rot 90) (mir X) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 300 -200) (rot 90) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "TK13P25DRQ"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3.05 -2.52)
+      (pt 3.05 -2.52)
+      (pt 3.05 4.08)
+      (pt -3.05 4.08)
+      (pt -3.05 -2.52))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.1 6.42)
+      (pt 4.1 6.42)
+      (pt 4.1 -6.58)
+      (pt -4.1 -6.58)
+      (pt -4.1 6.42))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1 -2.52)
+      (pt 1 -2.52)
+      (pt 1 -2.52)
+      (pt -1 -2.52)
+      (pt -1 -2.52))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.05 -1.2)
+      (pt -3.05 -1.2)
+      (pt -3.05 -2)
+      (pt -3.05 -2)
+      (pt -3.05 -1.2))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt 3.05 -2)
+      (pt 3.05 -2)
+      (pt 3.05 -1)
+      (pt 3.05 -1)
+      (pt 3.05 -2))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -2.4 -6.2)
+      (arc (pt -2.400 -6.200) (pt -2.400 -6.250) (pt -2.300 -6.150) (start 180.0) (sweep 180.0))
+      (pt -2.3 -6.2)
+      (arc (pt -2.300 -6.200) (pt -2.400 -6.250) (pt -2.300 -6.150) (start 180.0) (sweep .0))
+      (pt -2.4 -6.2)
+      (arc (pt -2.400 -6.200) (pt -2.400 -6.250) (pt -2.300 -6.150) (start 180.0) (sweep 180.0))
+      (pt -2.3 -6.2))))
+   (leg 1 (pt -2.300 -4.080) (padstack 0))
+   (leg 2 (pt 0.000 2.420) (padstack 2))
+   (leg 3 (pt 2.300 -4.080) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.600 3.000 0 0 90.000))
+   )
+   (padstack 2
+    (plated false)
+    (pad (layer TCOP) (square 6.000))
+   )
+  )
+ )
+)

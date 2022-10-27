@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 06035A220JAT2A
+D 0603 C0G ceramic capacitor,22pF 50V AVX 0603 Standard 22pF Ceramic Multilayer Capacitor, 50 V dc C0G Dielectric ??5% SMD
+K
+F http://datasheets.avx.com/C0GNP0-Dielectric.pdf
+$ENDCMP
+#
+#End Doc Library

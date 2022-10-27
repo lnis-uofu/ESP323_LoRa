@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MMBT3904
+D Trans GP BJT NPN 40V 0.2A Automotive 3-Pin SOT-23
+K
+F https://media.digikey.com/pdf/Data%20Sheets/ON%20Semiconductor%20PDFs/2N3904,MMBT3904,PZT3904.pdf
+$ENDCMP
+#
+#End Doc Library

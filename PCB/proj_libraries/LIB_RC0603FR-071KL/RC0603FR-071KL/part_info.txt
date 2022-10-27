@@ -1,0 +1,9 @@
+Manufacturer=KEMET
+PartNumber=RC0603FR-071KL
+PartCategory=Resistor
+PackageCategory=Resistor Chip
+PinCount=2
+Version=3.1
+Released=2016-01-08 14:14:48
+Downloaded=2022-10-25 17:20:50
+3D=Y

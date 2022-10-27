@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "RHDR5W70P0X254_1X5_1310X250X865P"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "RHDR5W70P0X254_1X5_1310X250X865P")
+        (spec "default")
+    )
+)

@@ -1,0 +1,9 @@
+Manufacturer=Hirose
+PartNumber=ZX62-B-5PA(33)
+PartCategory=Connector
+PackageCategory=Other
+PinCount=11
+Version=1.3
+Released=2020-04-05 15:11:02
+Downloaded=2022-10-24 18:40:37
+3D=Y

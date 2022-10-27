@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'M20_7820542'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Harwin", "M20-7820542" (!) = "", "RHDR5W70P0X254_1X5_1310X250X865P", "Header, Receptacle - Straight PTH Box", "855-M20-7820542", "https://www.mouser.co.uk/ProductDetail/Harwin/M20-7820542?qs=vF78I%252BjhbY9JoekBTXVWnQ%3D%3D", "Headers & Wire Housings 5 PIN SIL VERTICAL SOCKET GOLD+TIN", "https://cdn.harwin.com/pdfs/M20-782.pdf", "8.65 mm"
+END_PART
+
+END.

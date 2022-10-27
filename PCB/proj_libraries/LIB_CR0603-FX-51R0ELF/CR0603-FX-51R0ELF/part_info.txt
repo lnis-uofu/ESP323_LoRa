@@ -1,0 +1,9 @@
+Manufacturer=Bourns
+PartNumber=CR0603-FX-51R0ELF
+PartCategory=Resistor
+PackageCategory=Resistor Chip
+PinCount=2
+Version=1.2
+Released=2018-10-16 12:21:39
+Downloaded=2022-10-26 17:55:07
+3D=Y

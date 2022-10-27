@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MMBT3904'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Diotec", "MMBT3904" (!) = "", "SOT95P240X120-3N", "SOT23 (3-Pin)", "", "", "Trans GP BJT NPN 40V 0.2A Automotive 3-Pin SOT-23", "https://media.digikey.com/pdf/Data%20Sheets/ON%20Semiconductor%20PDFs/2N3904,MMBT3904,PZT3904.pdf", "1.2 mm"
+END_PART
+
+END.

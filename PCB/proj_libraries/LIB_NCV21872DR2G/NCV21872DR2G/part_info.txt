@@ -1,0 +1,9 @@
+Manufacturer=onsemi
+PartNumber=NCV21872DR2G
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=8
+Version=1.2
+Released=2022-08-19 08:55:29
+Downloaded=2022-10-25 17:12:38
+3D=Y

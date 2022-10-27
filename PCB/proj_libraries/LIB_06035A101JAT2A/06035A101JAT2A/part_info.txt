@@ -1,0 +1,9 @@
+Manufacturer=AVX
+PartNumber=06035A101JAT2A
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=3.2
+Released=2016-03-01 18:56:47
+Downloaded=2022-10-26 18:18:38
+3D=Y

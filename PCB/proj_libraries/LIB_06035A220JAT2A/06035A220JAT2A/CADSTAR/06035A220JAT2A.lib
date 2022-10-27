@@ -1,0 +1,16 @@
+.06035A220JAT2A :1 ;0603 C0G ceramic capacitor,22pF 50V AVX 0603 Standard 22pF Ceramic Multilayer Capacitor, 50 V dc C0G Dielectric ??5% SMD
+CAPC1608X90N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN 06035A220JAT2A
+~!Mouser Part Number (581-06035A220J)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/AVX/06035A220JAT2A?qs=WmCxkUxNecRe2%252BrYSa2zPg%3D%3D)
+~!Manufacturer_Name (AVX)
+~!Manufacturer_Part_Number (06035A220JAT2A)
+~!Link Datasheet (http://datasheets.avx.com/C0GNP0-Dielectric.pdf)
+~!Height (0.9mm)
+~!3D_Model (06035A220JAT2A)
+"06035A220JAT2A"
+1.1!U 2.1!U 

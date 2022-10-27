@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'TK13P25D_RQ'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Toshiba", "TK13P25D,RQ" (!) = "", "TK13P25DRQ", "Other", "757-TK13P25DRQ", "https://www.mouser.co.uk/ProductDetail/Toshiba/TK13P25DRQ/?qs=B6kkDfuK7%2FAQ0ksZyBxdyg%3D%3D", "Pb-F POWER MOSFET TRANSISTOR DPAK-OS PD=96W F=1MHZ", "https://toshiba.semicon-storage.com/ap-en/semiconductor/design-development/package/detail.DPAK.html", "2.4 mm"
+END_PART
+
+END.

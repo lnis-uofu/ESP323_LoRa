@@ -1,0 +1,17 @@
+.53261-7008 :1 ;1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Gold (Au) Plating, Friction Lock,  Circuits, Tape and Reel
+"532617008"
+*STM J
+*NGS
+*PNM 1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=MP1 10=MP2
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5" 6="6" 7="7" 8="8" 9="MP1" 10="MP2"
+*MXP 10
+*DFN 53261-7008
+~!Mouser Part Number (538-53261-7008)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Molex/53261-7008?qs=0lSvoLzn4L%2FGiHchImg8rw%3D%3D)
+~!Manufacturer_Name (Molex)
+~!Manufacturer_Part_Number (53261-7008)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/53261-7008.pdf)
+~!Height (3.4mm)
+~!3D_Model (53261-7008)
+"53261-7008"
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 

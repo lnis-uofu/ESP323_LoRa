@@ -1,0 +1,9 @@
+Manufacturer=KEMET
+PartNumber=RC0603FR-07220RL
+PartCategory=Resistor
+PackageCategory=Resistor Chip
+PinCount=2
+Version=2.1
+Released=2016-03-14 11:13:37
+Downloaded=2022-10-25 17:24:39
+3D=Y

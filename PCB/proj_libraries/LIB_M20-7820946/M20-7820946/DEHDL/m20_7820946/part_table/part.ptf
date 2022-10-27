@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'M20_7820946'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Harwin", "M20-7820946" (!) = "", "RHDR9W70P0X254_1X9_2326X250X865P", "Header, Receptacle - Straight PTH Box", "855-M20-7820946", "https://www.mouser.co.uk/ProductDetail/Harwin/M20-7820946?qs=vF78I%252BjhbY9ojjezFz0qqQ%3D%3D", "Headers & Wire Housings 9 PIN SIL VERTICAL SOCKET TIN", "https://cdn.harwin.com/pdfs/M20-782.pdf", "8.65 mm"
+END_PART
+
+END.

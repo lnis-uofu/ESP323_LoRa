@@ -1,0 +1,16 @@
+.06035A101JAT2A :1 ;0603 C0G ceramic capacitor,100pF 50V AVX 0603 Standard 100pF Ceramic Multilayer Capacitor, 50 V dc C0G Dielectric +/-5% SMD
+CAPC1608X90N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN 06035A101JAT2A
+~!Mouser Part Number (581-06035A101J)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/AVX/06035A101JAT2A?qs=AGOxcRBkg6ZhFRbhUzfJ7A%3D%3D)
+~!Manufacturer_Name (AVX)
+~!Manufacturer_Part_Number (06035A101JAT2A)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-AE/DSA3AE0000492.pdf)
+~!Height (0.9mm)
+~!3D_Model (06035A101JAT2A)
+"06035A101JAT2A"
+1.1!U 2.1!U 

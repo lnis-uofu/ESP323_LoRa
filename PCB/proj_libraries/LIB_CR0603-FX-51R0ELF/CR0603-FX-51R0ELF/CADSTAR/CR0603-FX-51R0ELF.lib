@@ -1,0 +1,16 @@
+.CR0603-FX-51R0ELF :1 ;BOURNS - CR0603-FX-51R0ELF - RES, 51R, 1%, 0603, THICK FILM
+RESC1608X55N
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN CR0603-FX-51R0ELF
+~!Mouser Part Number (652-CR0603FX-51R0ELF)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Bourns/CR0603-FX-51R0ELF/?qs=0nF2VnfAjXm8gQpP7vsFGw%3D%3D)
+~!Manufacturer_Name (Bourns)
+~!Manufacturer_Part_Number (CR0603-FX-51R0ELF)
+~!Link Datasheet (https://www.bourns.com/pdfs/chpreztr.pdf)
+~!Height (0.55mm)
+~!3D_Model (CR0603-FX-51R0ELF)
+CR0603-FX-51R0ELF
+1.1!U 2.1!U 

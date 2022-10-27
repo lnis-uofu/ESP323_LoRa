@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MEM2051_00_195_00_A'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "GCT (GLOBAL CONNECTOR TECHNOLOGY)", "MEM2051-00-195-00-A" (!) = "", "MEM20510019500A", "Other", "640-MEM20510019500A", "https://www.mouser.co.uk/ProductDetail/GCT/MEM2051-00-195-00-A?qs=KUoIvG%2F9Ilat7yfJRNWXUQ%3D%3D", "MICRO SD PUSH PUSH, OPEN, SMT, 1", "https://gct.co/files/drawings/mem2051.pdf", "2.05 mm"
+END_PART
+
+END.

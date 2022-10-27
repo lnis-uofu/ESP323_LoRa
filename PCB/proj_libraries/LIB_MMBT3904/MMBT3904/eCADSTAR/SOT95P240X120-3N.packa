@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "MMBT3904"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-09-29-13:49:39)
+    (mountForm default
+        (footprintRef "SOT95P240X120-3N")
+        (spec "System")
+    )
+)

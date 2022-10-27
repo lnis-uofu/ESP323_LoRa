@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "TK13P25DRQ"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "TK13P25DRQ")
+        (spec "default")
+    )
+)

@@ -1,0 +1,17 @@
+.2894 :1 ;Coin Cell Battery Holders CR1220 COIN CELL SMT RETAINER
+"2894"
+*STM H
+*NGS
+*PNM 1=1 2=2 3=MP1
+*PLB 1="+" 2="-" 3="MP1"
+*MXP 3
+*DFN 2894
+~!Mouser Part Number (534-2894)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/2894?qs=u16ybLDytRb94n%2F3dXyVLQ%3D%3D)
+~!Manufacturer_Name (Keystone Electronics)
+~!Manufacturer_Part_Number (2894)
+~!Link Datasheet (https://www.keyelco.com/product-pdf.cfm?p=14467)
+~!Height (2.42mm)
+~!3D_Model (2894)
+"2894"
+1.1!U 2.1!U 3.1!U 

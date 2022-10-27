@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_1512068"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-10-16-12:21:39)
+    (utime 2019-07-01-10:15:38)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "CR0603-FX-51R0ELF")
+)
+
+
+(pinAssign "ECS_1512068"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-10-16-12:21:39)
+    (utime 2019-07-01-10:15:38)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_1512068")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "CR0603-FX-51R0ELF")
+)
+
+
+(part "CR0603-FX-51R0ELF"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-10-16-12:21:39)
+    (utime 2019-07-01-10:15:38)
+    (packageRef "CR0603-FX-51R0ELF")
+    (pinAssignRef "ECS_1512068")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "R")
+    (property "description" "BOURNS - CR0603-FX-51R0ELF - RES, 51R, 1%, 0603, THICK FILM")
+    (property "Mouser_Part_Number" "652-CR0603FX-51R0ELF")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CR0603-FX-51R0ELF/?qs=0nF2VnfAjXm8gQpP7vsFGw%3D%3D")
+    (property "Manufacturer_Name" "Bourns")
+    (property "Manufacturer_Part_Number" "CR0603-FX-51R0ELF")
+    (property "Datasheet_Link" "https://www.bourns.com/pdfs/chpreztr.pdf")
+    (property "compAreaTopHeight" 0.55)
+)
+
+

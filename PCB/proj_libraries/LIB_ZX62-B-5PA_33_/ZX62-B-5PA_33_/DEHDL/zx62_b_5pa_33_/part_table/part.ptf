@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ZX62_B_5PA_33_'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Hirose", "ZX62-B-5PA(33)" (!) = "", "ZX62B5PA33", "Other", "798-ZX62-B-5PA33", "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/ZX62-B-5PA33?qs=IvjI65BR3TWOr0fx8JTXXw%3D%3D", "USB Connectors MICRO B RECEPT RA SMT BTTM MNT", "https://www.hirose.com/product/download/?distributor=digikey&type=specSheet&lang=en&num=ZX62-B-5PA(33)", "3 mm"
+END_PART
+
+END.

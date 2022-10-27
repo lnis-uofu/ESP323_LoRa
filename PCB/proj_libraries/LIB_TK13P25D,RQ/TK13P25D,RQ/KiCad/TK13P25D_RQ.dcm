@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TK13P25D,RQ
+D Pb-F POWER MOSFET TRANSISTOR DPAK-OS PD=96W F=1MHZ
+K
+F https://toshiba.semicon-storage.com/ap-en/semiconductor/design-development/package/detail.DPAK.html
+$ENDCMP
+#
+#End Doc Library

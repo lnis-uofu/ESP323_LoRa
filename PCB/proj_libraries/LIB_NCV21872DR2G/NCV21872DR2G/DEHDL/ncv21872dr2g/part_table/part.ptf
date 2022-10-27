@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'NCV21872DR2G'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "onsemi", "NCV21872DR2G" (!) = "", "SOIC127P600X175-8N", "Small Outline Packages", "", "", "SOIC8", "https://www.mouser.co.uk/datasheet/2/308/NCS21871_D-1841380.pdf", "1.75 mm"
+END_PART
+
+END.

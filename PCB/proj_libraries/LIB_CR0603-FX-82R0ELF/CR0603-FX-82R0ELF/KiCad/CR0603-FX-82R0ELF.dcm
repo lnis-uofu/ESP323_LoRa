@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CR0603-FX-82R0ELF
+D BOURNS - CR0603-FX-82R0ELF - RES, 82R, 1%, 0603, THICK FILM
+K
+F https://www.bourns.com/pdfs/chpreztr.pdf
+$ENDCMP
+#
+#End Doc Library

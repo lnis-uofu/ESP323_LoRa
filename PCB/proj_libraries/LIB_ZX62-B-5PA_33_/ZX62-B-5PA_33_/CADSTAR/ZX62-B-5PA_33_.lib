@@ -1,0 +1,17 @@
+.ZX62-B-5PA_33_ :1 ;USB Connectors MICRO B RECEPT RA SMT BTTM MNT
+ZX62B5PA33
+*STM J
+*NGS
+*PNM 1=1 2=2 3=3 4=4 5=5 6=MP1 7=MP2 8=MP3 9=MP4 10=MP5 11=MP6
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5" 6="MP1" 7="MP2" 8="MP3" 9="MP4" 10="MP5" 11="MP6"
+*MXP 11
+*DFN ZX62-B-5PA_33_
+~!Mouser Part Number (798-ZX62-B-5PA33)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Hirose-Connector/ZX62-B-5PA33?qs=IvjI65BR3TWOr0fx8JTXXw%3D%3D)
+~!Manufacturer_Name (Hirose)
+~!Manufacturer_Part_Number (ZX62-B-5PA(33))
+~!Link Datasheet (https://www.hirose.com/product/download/?distributor=digikey&type=specSheet&lang=en&num=ZX62-B-5PA(33))
+~!Height (3mm)
+~!3D_Model (ZX62-B-5PA_33_)
+ZX62-B-5PA_33_
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 

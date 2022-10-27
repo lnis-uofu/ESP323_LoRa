@@ -1,0 +1,9 @@
+Manufacturer=AVX
+PartNumber=0603YC104J4T4A
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=2.2
+Released=2021-03-26 08:29:14
+Downloaded=2022-10-26 18:13:52
+3D=Y

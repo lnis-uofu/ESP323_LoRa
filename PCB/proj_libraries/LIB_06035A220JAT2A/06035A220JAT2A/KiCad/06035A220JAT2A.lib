@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 06035A220JAT2A
+#/254310/983811/2.49/2/3/Capacitor
+DEF 06035A220JAT2A C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "06035A220JAT2A" 350 150 50 H V L CNN
+F2 "CAPC1608X90N" 350 50 50 H I L CNN
+F3 "http://datasheets.avx.com/C0GNP0-Dielectric.pdf" 350 -50 50 H I L CNN
+F4 "0603 C0G ceramic capacitor,22pF 50V AVX 0603 Standard 22pF Ceramic Multilayer Capacitor, 50 V dc C0G Dielectric ??5% SMD" 350 -150 50 H I L CNN "Description"
+F5 "0.9" 350 -250 50 H I L CNN "Height"
+F6 "581-06035A220J" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/AVX/06035A220JAT2A?qs=WmCxkUxNecRe2%252BrYSa2zPg%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "AVX" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "06035A220JAT2A" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 280 0 300 0 N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'RC0603FR_07220RL'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "KEMET", "RC0603FR-07220RL" (!) = "", "RESC1608X55N", "Resistor Chip", "603-RC0603FR-07220RL", "https://www.mouser.co.uk/ProductDetail/YAGEO/RC0603FR-07220RL?qs=VU8sRB4EgwA1IyQ0vhXEEw%3D%3D", "YAGEO (PHYCOMP) - RC0603FR-07220RL - RES, THICK FILM, 220R, 1%, 0.1W, 0603", "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/902f9e387b938f871d31120f5fc1d65e.pdf", "0.55 mm"
+END_PART
+
+END.

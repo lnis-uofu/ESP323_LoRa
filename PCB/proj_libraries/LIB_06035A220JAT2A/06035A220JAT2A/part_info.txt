@@ -1,0 +1,9 @@
+Manufacturer=AVX
+PartNumber=06035A220JAT2A
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=3.2
+Released=2016-02-02 16:00:24
+Downloaded=2022-10-26 18:20:19
+3D=Y

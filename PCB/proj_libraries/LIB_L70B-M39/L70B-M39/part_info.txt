@@ -1,0 +1,9 @@
+Manufacturer=Quectel
+PartNumber=L70B-M39
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=18
+Version=1.1
+Released=2018-07-29 08:23:46
+Downloaded=2022-10-25 17:09:18
+3D=N

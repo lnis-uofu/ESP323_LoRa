@@ -1,0 +1,16 @@
+.NCV21872DR2G :1 ;SOIC8
+SOIC127P600X175-8N
+*STM IC
+*NGS
+*PLB 1="OUT 1" 2="IN- 1" 3="IN+ 1" 4="VSS" 5="IN+ 2" 6="IN- 2" 7="OUT 2" 8="VDD"
+*MXP 8
+*DFN NCV21872DR2G
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Manufacturer_Name (onsemi)
+~!Manufacturer_Part_Number (NCV21872DR2G)
+~!Link Datasheet (https://www.mouser.co.uk/datasheet/2/308/NCS21871_D-1841380.pdf)
+~!Height (1.75mm)
+~!3D_Model (NCV21872DR2G)
+NCV21872DR2G
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

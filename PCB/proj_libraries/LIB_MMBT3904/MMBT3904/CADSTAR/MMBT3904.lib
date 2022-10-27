@@ -1,0 +1,16 @@
+.MMBT3904 :1 ;Trans GP BJT NPN 40V 0.2A Automotive 3-Pin SOT-23
+SOT95P240X120-3N
+*STM IC
+*NGS
+*PLB 1="B" 2="E" 3="C"
+*MXP 3
+*DFN MMBT3904
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Manufacturer_Name (Diotec)
+~!Manufacturer_Part_Number (MMBT3904)
+~!Link Datasheet (https://media.digikey.com/pdf/Data%20Sheets/ON%20Semiconductor%20PDFs/2N3904,MMBT3904,PZT3904.pdf)
+~!Height (1.2mm)
+~!3D_Model (MMBT3904)
+MMBT3904
+1.1!U 2.1!U 3.1!U 

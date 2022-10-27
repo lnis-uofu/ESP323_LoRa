@@ -1,0 +1,9 @@
+Manufacturer=Molex
+PartNumber=53261-7008
+PartCategory=Connector
+PackageCategory=Other
+PinCount=10
+Version=1.2
+Released=2020-02-18 13:03:10
+Downloaded=2022-10-25 17:10:51
+3D=Y

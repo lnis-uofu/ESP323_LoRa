@@ -1,0 +1,107 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "LD1086DT50TR"
+   (description "STMicroelectronics LD1086DT50TR, LDO Regulator, 1.5A, 5 V 3-Pin, DPAK")
+   (family "ANA")
+   (package "LD1086DT33TR")
+   (attribute "Datasheet Link" "https://www.st.com/resource/en/datasheet/ld1086.pdf")
+   (attribute "Geometry.Height" "2.4mm")
+   (attribute "Mouser Part Number" "511-LD1086DT50TR")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LD1086DT50TR?qs=22WmWNTp1rokTqd3JqiONw%3D%3D")
+   (attribute "Manufacturer_Name" "STMicroelectronics")
+   (attribute "Manufacturer_Part_Number" "LD1086DT50TR")
+   (gate
+    (symbol "LD1086DT50TR")
+    (pin "ADJ/GND" 1 PS)
+    (pin "OUTPUT" 2 PS)
+    (pin "INPUT" 3 PS)
+   )
+  )
+  (symbol "LD1086DT50TR"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1200 100) (pt 1200 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "LD1086DT33TR"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.254)
+     (path
+      (closed true)
+      (pt -3.25 -0.881)
+      (pt 3.25 -0.881)
+      (pt 3.25 -6.981)
+      (pt -3.25 -6.981)
+      (pt -3.25 -0.881))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.25 1.25)
+      (pt 4.25 1.25)
+      (pt 4.25 -12.459)
+      (pt -4.25 -12.459)
+      (pt -4.25 1.25))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -3.25 -6.981)
+      (pt 3.25 -6.981))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1984899999999996)
+     (path
+      (closed true)
+      (pt -2.395 -11.36)
+      (arc (pt -2.395 -11.360) (pt -2.395 -11.459) (pt -2.197 -11.261) (start 180.0) (sweep 180.0))
+      (pt -2.197 -11.36)
+      (arc (pt -2.197 -11.360) (pt -2.395 -11.459) (pt -2.197 -11.261) (start 180.0) (sweep .0))
+      (pt -2.395 -11.36))))
+   (leg 1 (pt -2.286 -9.300) (padstack 0))
+   (leg 2 (pt 0.000 -3.050) (padstack 2))
+   (leg 3 (pt 2.286 -9.300) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.500 2.800 0 0 90.000))
+   )
+   (padstack 2
+    (plated false)
+    (pad (layer TCOP) (rectf 6.100 6.300 0 0 0.000))
+   )
+  )
+ )
+)

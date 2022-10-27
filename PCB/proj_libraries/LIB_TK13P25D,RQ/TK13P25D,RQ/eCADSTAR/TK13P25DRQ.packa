@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "TK13P25D_RQ"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-02-19-12:06:20)
+    (mountForm default
+        (footprintRef "TK13P25DRQ")
+        (spec "System")
+    )
+)

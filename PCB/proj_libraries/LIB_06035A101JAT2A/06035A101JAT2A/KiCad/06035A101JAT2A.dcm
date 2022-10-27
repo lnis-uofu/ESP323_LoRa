@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 06035A101JAT2A
+D 0603 C0G ceramic capacitor,100pF 50V AVX 0603 Standard 100pF Ceramic Multilayer Capacitor, 50 V dc C0G Dielectric +/-5% SMD
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-AE/DSA3AE0000492.pdf
+$ENDCMP
+#
+#End Doc Library

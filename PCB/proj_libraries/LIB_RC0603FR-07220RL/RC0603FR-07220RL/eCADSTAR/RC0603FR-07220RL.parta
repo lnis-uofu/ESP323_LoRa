@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_290366"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2016-03-14-11:13:37)
+    (utime 2022-04-13-13:14:05)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "RC0603FR-07220RL")
+)
+
+
+(pinAssign "ECS_290366"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2016-03-14-11:13:37)
+    (utime 2022-04-13-13:14:05)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_290366")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "RC0603FR-07220RL")
+)
+
+
+(part "RC0603FR-07220RL"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2016-03-14-11:13:37)
+    (utime 2022-04-13-13:14:05)
+    (packageRef "RC0603FR-07220RL")
+    (pinAssignRef "ECS_290366")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "R")
+    (property "description" "YAGEO (PHYCOMP) - RC0603FR-07220RL - RES, THICK FILM, 220R, 1%, 0.1W, 0603")
+    (property "Mouser_Part_Number" "603-RC0603FR-07220RL")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/YAGEO/RC0603FR-07220RL?qs=VU8sRB4EgwA1IyQ0vhXEEw%3D%3D")
+    (property "Manufacturer_Name" "KEMET")
+    (property "Manufacturer_Part_Number" "RC0603FR-07220RL")
+    (property "Datasheet_Link" "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/902f9e387b938f871d31120f5fc1d65e.pdf")
+    (property "compAreaTopHeight" 0.55)
+)
+
+

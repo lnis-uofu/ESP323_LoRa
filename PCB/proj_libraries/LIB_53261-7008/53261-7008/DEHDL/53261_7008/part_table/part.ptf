@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '53261_7008'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Molex", "53261-7008" (!) = "", "532617008", "Other", "538-53261-7008", "https://www.mouser.co.uk/ProductDetail/Molex/53261-7008?qs=0lSvoLzn4L%2FGiHchImg8rw%3D%3D", "1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Gold (Au) Plating, Friction Lock,  Circuits, Tape and Reel", "https://componentsearchengine.com/Datasheets/1/53261-7008.pdf", "3.4 mm"
+END_PART
+
+END.

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'CR0603_FX_4701ELF'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Bourns", "CR0603-FX-4701ELF" (!) = "", "RESC1608X55N", "Resistor Chip", "652-CR0603FX-4701ELF", "https://www.mouser.co.uk/ProductDetail/Bourns/CR0603-FX-4701ELF?qs=CCIlxZRRv7jGwxSydcgiTA%3D%3D", "SMD 0603 thick film resistor 4K7 1% Bourns CR0603-FX Series Thick Film Surface Mount Fixed Resistor 0603 Case 4.7k +/-1% 0.1W +/-100ppm/C", "https://www.bourns.com/pdfs/chpreztr.pdf", "0.55 mm"
+END_PART
+
+END.
