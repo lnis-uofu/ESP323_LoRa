@@ -22,4 +22,5 @@
   (lib (name "ZX62-B-5PA_33_")(type "KiCad")(uri "/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_ZX62-B-5PA_33_/ZX62-B-5PA_33_/KiCad")(options "")(descr ""))
   (lib (name "MMBT3904")(type "KiCad")(uri "/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_MMBT3904/MMBT3904/KiCad")(options "")(descr ""))
   (lib (name "TK13P25D")(type "KiCad")(uri "/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_TK13P25D,RQ/TK13P25D,RQ/KiCad")(options "")(descr ""))
+  (lib (name "custom_components")(type "KiCad")(uri "${KIPRJMOD}/custom_components.pretty")(options "")(descr ""))
 )

@@ -22,4 +22,5 @@
   (lib (name "RC0603FR-071KL")(type "KiCad")(uri "/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_RC0603FR-071KL/RC0603FR-071KL/KiCad/RC0603FR-071KL.kicad_sym")(options "")(descr ""))
   (lib (name "MMBT3904")(type "KiCad")(uri "/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_MMBT3904/MMBT3904/KiCad/MMBT3904.kicad_sym")(options "")(descr ""))
   (lib (name "TK13P25D_RQ")(type "KiCad")(uri "/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_TK13P25D,RQ/TK13P25D,RQ/KiCad/TK13P25D_RQ.kicad_sym")(options "")(descr ""))
+  (lib (name "custom_components")(type "KiCad")(uri "/Users/michael/Documents/Senior_Project/PCB/custom_components.kicad_sym")(options "")(descr ""))
 )
