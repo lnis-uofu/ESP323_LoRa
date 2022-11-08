@@ -1237,6 +1237,7 @@
     )
   )
 
+
   (junction (at 224.79 102.87) (diameter 0) (color 0 0 0 0)
     (uuid 03070418-d6b4-4d47-9a76-b779ee2be388)
   )
@@ -2317,7 +2318,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4f1fdd94-c822-4a7a-97f1-595f423a9667)
   )
-  (label "GPIO16" (at 378.46 74.93 180)
+  (label "GPIO14" (at 378.46 74.93 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 4ffa326b-b400-48fe-ba80-5aef931e5357)
   )

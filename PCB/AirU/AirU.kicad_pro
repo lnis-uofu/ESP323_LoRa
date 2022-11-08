@@ -142,12 +142,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "pin_not_connected|2044700|546100|6bb5af0a-7686-442f-b2d2-d1231111bbef|00000000-0000-0000-0000-000000000000",
-      "pin_not_connected|3797300|1003300|bd677b5a-8300-4cc9-9750-b03cc3ebea15|00000000-0000-0000-0000-000000000000",
-      "pin_not_connected|3797300|1079500|4b2c727c-d5ee-4440-a68a-ee437fb5ffcd|00000000-0000-0000-0000-000000000000",
-      "pin_not_connected|3797300|977900|bb6db245-1b2f-4241-b1f5-eb99836be5d0|00000000-0000-0000-0000-000000000000"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -374,6 +369,28 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Rail",
+        "nets": [
+          "GND",
+          "VCC",
+          "VDD"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0
