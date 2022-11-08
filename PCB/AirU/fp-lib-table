@@ -24,4 +24,5 @@
   (lib (name "TK13P25D")(type "KiCad")(uri "/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_TK13P25D,RQ/TK13P25D,RQ/KiCad")(options "")(descr ""))
   (lib (name "custom_components")(type "KiCad")(uri "${KIPRJMOD}/custom_components.pretty")(options "")(descr ""))
   (lib (name "chem_air_u_footprints")(type "KiCad")(uri "/Users/michael/Documents/Senior_Project/PCB/chem_air_u_footprints")(options "")(descr ""))
+  (lib (name "footprints")(type "KiCad")(uri "/Users/michael/Documents/Senior_Project/PCB/proj_libraries/ul_HDC2010YPAR/KiCAD/2022-11-07_15-59-30/footprints.pretty")(options "")(descr ""))
 )
