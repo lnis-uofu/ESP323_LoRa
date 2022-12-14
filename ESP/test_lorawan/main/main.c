@@ -45,14 +45,6 @@ int DIO0Irq;
 
 #define ACTIVE_REGION LORAMAC_REGION_US915
 
-#ifndef ACTIVE_REGION
-
-#warning "No active region defined, LORAMAC_REGION_EU868 will be used as default."
-
-#define ACTIVE_REGION LORAMAC_REGION_EU868
-
-#endif
-
 /*!
  * LoRaWAN default end-device class
  */
@@ -251,22 +243,13 @@ static volatile uint8_t IsTxFramePending = 0;
 
 static volatile uint32_t TxPeriodicity = 0;
 
-/*!
- * LED GPIO pins objects
- */
-//Gpio_t Led1; // Tx
-//Gpio_t Led2; // Rx
-
-/*!
- * UART object used for command line interface handling
- */
-//Uart_t Uart2;
 
 /*!
  * Main application entry point.
  */
 void app_main( void )
 {
+
     //AppDataBuffer[0] = NULL;
     //AppDataBuffer[1] = NULL;
 
@@ -295,7 +278,7 @@ void app_main( void )
 
     if ( LmHandlerInit( &LmHandlerCallbacks, &LmHandlerParams ) != LORAMAC_HANDLER_SUCCESS )
     {
-        printf( "LoRaMac wasn't properly initialized\n" );
+        //printf( "LoRaMac wasn't properly initialized\n" );
         // Fatal error, endless loop.
         while ( 1 )
         {
@@ -346,16 +329,17 @@ void app_main( void )
 
     LmHandlerJoin( );
 
-    printf("after join \n");
+    //printf("after join \n");
 
     StartTxProcess( LORAMAC_HANDLER_TX_ON_TIMER ); // waso n timer
 
     int flag;
 
     
-
+    int count = 0;
     while( 1 )
     {
+        /*
         CRITICAL_SECTION_BEGIN();
         flag = DIO0Irq;
         if(flag)
@@ -365,28 +349,29 @@ void app_main( void )
         CRITICAL_SECTION_END();
         if(flag)
         {
-            printf("invoke handler\n");
+            //printf("invoke handler\n");
             SX1276OnDio0Irq(NULL);
-            printf("after handler\n");
+            //printf("after handler\n");
         }
-        
+        */
         //uint8_t *word = (uint8_t *)"Great Success";
         //uint8_t *word = (uint8_t *)"Z";
         //Radio.Send( word, 1 );
-        DelayMs(100);
+        //DelayMs(100);
         
-        //printf("start of loop \n");
+        ////printf("start of loop \n");
         // Process characters sent over the command line interface
         //CliProcess( &Uart2 );
 
         // Processes the LoRaMac events
         
+        ////printf("before LmHandlerProcess\n");
         LmHandlerProcess( ); 
 
         // Process application uplinks management
         UplinkProcess( ); 
 
-        {
+        
         CRITICAL_SECTION_BEGIN();
         if( IsMacProcessPending == 1 )
         {
@@ -397,43 +382,51 @@ void app_main( void )
         else
         {
             // The MCU wakes up through events
-            //printf("board low power handler reached\n");
+            ////printf("board low power handler reached\n");
             //BoardLowPowerHandler( );
         }
         CRITICAL_SECTION_END();
-        }
-        //printf("end of loop \n");
-        DelayMs(10);
+        
+        ////printf("end of loop \n");
+        //DelayMs(10);
+        //printf("while count: %d\n", count++);
     }
+
 }
 
 static void OnMacProcessNotify( void )
 {
+    //printf("OnMacProcessNotify\n");
     IsMacProcessPending = 1;
 }
 
 static void OnNvmDataChange( LmHandlerNvmContextStates_t state, uint16_t size )
 {
+    //printf("OnNvmDataChange\n");
     DisplayNvmDataChange( state, size );
 }
 
 static void OnNetworkParametersChange( CommissioningParams_t* params )
 {
+    //printf("OnNetworkParametersChange\n");
     DisplayNetworkParametersUpdate( params );
 }
 
 static void OnMacMcpsRequest( LoRaMacStatus_t status, McpsReq_t *mcpsReq, TimerTime_t nextTxIn )
 {
+    //printf("OnMacMcpsRequest\n");
     DisplayMacMcpsRequestUpdate( status, mcpsReq, nextTxIn );
 }
 
 static void OnMacMlmeRequest( LoRaMacStatus_t status, MlmeReq_t *mlmeReq, TimerTime_t nextTxIn )
 {
+    //printf("OnMacMlmeRequest\n");
     DisplayMacMlmeRequestUpdate( status, mlmeReq, nextTxIn );
 }
 
 static void OnJoinRequest( LmHandlerJoinParams_t* params )
 {
+    //printf("OnJoinRequest\n");
     DisplayJoinRequestUpdate( params );
     if( params->Status == LORAMAC_HANDLER_ERROR )
     {
@@ -447,13 +440,13 @@ static void OnJoinRequest( LmHandlerJoinParams_t* params )
 
 static void OnTxData( LmHandlerTxParams_t* params )
 {
-    printf("OnTxData\n");
+    //printf("OnTxData\n");
     DisplayTxUpdate( params );
 }
 
 static void OnRxData( LmHandlerAppData_t* appData, LmHandlerRxParams_t* params )
 {
-    printf("OnRxData\n");
+    //printf("OnRxData\n");
     DisplayRxUpdate( appData, params );
 
     switch( appData->Port )
@@ -475,6 +468,7 @@ static void OnRxData( LmHandlerAppData_t* appData, LmHandlerRxParams_t* params )
 
 static void OnClassChange( DeviceClass_t deviceClass )
 {
+    //printf("OnClassChange\n");
     DisplayClassUpdate( deviceClass );
 
     // Inform the server as soon as possible that the end-device has switched to ClassB
@@ -489,6 +483,7 @@ static void OnClassChange( DeviceClass_t deviceClass )
 
 static void OnBeaconStatusChange( LoRaMacHandlerBeaconParams_t* params )
 {
+    //printf("OnBeaconStatusChange\n");
     switch( params->State )
     {
         case LORAMAC_HANDLER_BEACON_RX:
@@ -528,10 +523,10 @@ static void OnSysTimeUpdate( void )
  */
 static void PrepareTxFrame( void )
 {
-    
+    //printf("PrepareTxFrame\n");
     if( LmHandlerIsBusy( ) == true )
     {
-        printf("handler is busy so returning early\n");
+        //printf("---handler is busy so returning early\n");
         return;
     }
     
@@ -551,13 +546,14 @@ static void PrepareTxFrame( void )
     {
         // Switch LED 1 ON
         //GpioWrite( &Led1, 1 );
-        printf("send success\n");
+        //printf("---send success\n");
         //TimerStart( &Led1Timer );
     }
 }
 
 static void StartTxProcess( LmHandlerTxEvents_t txEvent )
 {
+    //printf("StartTxProcess\n");
     switch( txEvent )
     {
     default:
@@ -579,20 +575,25 @@ static void StartTxProcess( LmHandlerTxEvents_t txEvent )
 
 static void UplinkProcess( void )
 {
+    //printf("UplinkProcess\n");
     uint8_t isPending = 0;
+    ////printf("---before critical section in uplinkprocess\n");
     CRITICAL_SECTION_BEGIN( );
+    ////printf("---in critical section in uplinkprocess\n");
     isPending = IsTxFramePending;
     IsTxFramePending = 0;
     CRITICAL_SECTION_END( );
+    ////printf("---after critical section in uplinkprocess\n");
     if( isPending == 1 )
     {
-        printf("preparing tx frame\n");
+        ////printf("---preparing tx frame\n");
         PrepareTxFrame( );
     }
 }
 
 static void OnTxPeriodicityChanged( uint32_t periodicity )
 {
+    //printf("OnTxPeriodicityChanged\n");
     TxPeriodicity = periodicity;
 
     if( TxPeriodicity == 0 )
@@ -608,11 +609,13 @@ static void OnTxPeriodicityChanged( uint32_t periodicity )
 
 static void OnTxFrameCtrlChanged( LmHandlerMsgTypes_t isTxConfirmed )
 {
+    //printf("OnTxFrameCtrlChanged\n");
     LmHandlerParams.IsTxConfirmed = isTxConfirmed;
 }
 
 static void OnPingSlotPeriodicityChanged( uint8_t pingSlotPeriodicity )
 {
+    //printf("OnPingSlotPeriodicityChanged\n");
     LmHandlerParams.PingSlotPeriodicity = pingSlotPeriodicity;
 }
 
@@ -621,6 +624,7 @@ static void OnPingSlotPeriodicityChanged( uint8_t pingSlotPeriodicity )
  */
 static void OnTxTimerEvent( void* context )
 {
+    //printf("OnTxTimerEvent\n");
     TimerStop( &TxTimer );
 
     IsTxFramePending = 1;

@@ -1,0 +1,7 @@
+components/LoRaMac-node/src/mac/region/RegionUS915.c:553:    int8_t phyDr = DataratesUS915[txConfig->Datarate];
+components/LoRaMac-node/src/mac/region/RegionUS915.c:554:    int8_t txPowerLimited = LimitTxPower( txConfig->TxPower, RegionBands[RegionNvmGroup2->Channels[txConfig->Channel].Band].TxMaxPower, txConfig->Datarate, RegionNvmGroup2->ChannelsMask );
+components/LoRaMac-node/src/mac/region/RegionUS915.c:555:    uint32_t bandwidth = RegionCommonGetBandwidth( txConfig->Datarate, BandwidthsUS915 );
+components/LoRaMac-node/src/mac/region/RegionUS915.c:562:    Radio.SetChannel( RegionNvmGroup2->Channels[txConfig->Channel].Frequency );
+components/LoRaMac-node/src/mac/region/RegionUS915.c:564:    printf("Sending on freq %d", RegionNvmGroup2->Channels[txConfig->Channel].Frequency);
+components/LoRaMac-node/src/mac/region/RegionUS915.c:568:    Radio.SetMaxPayloadLength( MODEM_LORA, txConfig->PktLen );
+components/LoRaMac-node/src/mac/region/RegionUS915.c:602:    *txTimeOnAir = GetTimeOnAir( txConfig->Datarate, txConfig->PktLen );

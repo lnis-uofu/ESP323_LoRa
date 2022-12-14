@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/michael/Documents/Senior_Project/PCB/AirU/AirU.kicad_sch</source>
+    <date>Monday, November 28, 2022 at 04:21:33 PM</date>
+    <tool>Eeschema (6.0.8-1)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>AirU</title>
+        <company/>
+        <rev>0</rev>
+        <date/>
+        <source>AirU.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>0.1u</value>
+      <footprint>0603YC105KAT2A:CAPC1608X94N</footprint>
+      <datasheet>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YC105KAT2A#dim</datasheet>
+      <fields>
+        <field name="Description">AVX - 0603YC105KAT2A - CAP, MLCC, X7R, 1UF, 16V, 0603</field>
+        <field name="Height">0.94</field>
+        <field name="Manufacturer_Name">AVX</field>
+        <field name="Manufacturer_Part_Number">0603YC105KAT2A</field>
+        <field name="Mouser Part Number">581-0603YC105KAT2A</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/AVX/0603YC105KAT2A?qs=oZHZyJ9sPsF0nYEZ1SOhJA%3D%3D</field>
+      </fields>
+      <libsource lib="0603YC105KAT2A" part="0603YC105KAT2A" description="AVX - 0603YC105KAT2A - CAP, MLCC, X7R, 1UF, 16V, 0603"/>
+      <property name="Description" value="AVX - 0603YC105KAT2A - CAP, MLCC, X7R, 1UF, 16V, 0603"/>
+      <property name="Height" value="0.94"/>
+      <property name="Mouser Part Number" value="581-0603YC105KAT2A"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/AVX/0603YC105KAT2A?qs=oZHZyJ9sPsF0nYEZ1SOhJA%3D%3D"/>
+      <property name="Manufacturer_Name" value="AVX"/>
+      <property name="Manufacturer_Part_Number" value="0603YC105KAT2A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3d461252-5e74-4539-bbd8-bb5a9ac571c1</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10u</value>
+      <footprint>0603ZDD106KAT2A:CAPC1608X90N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/06031A100FAT2A.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 10uF X5R 0603 10%TOL</field>
+        <field name="Height">0.9</field>
+        <field name="Manufacturer_Name">AVX</field>
+        <field name="Manufacturer_Part_Number">0603ZD106KAT2A</field>
+        <field name="Mouser Part Number">581-0603ZD106KAT2A</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/AVX/0603ZD106KAT2A?qs=c1aAEamvUYHQhwHZOF6y0Q%3D%3D</field>
+      </fields>
+      <libsource lib="0603ZD106KAT2A" part="0603ZD106KAT2A" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 10uF X5R 0603 10%TOL"/>
+      <property name="Description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 10uF X5R 0603 10%TOL"/>
+      <property name="Height" value="0.9"/>
+      <property name="Mouser Part Number" value="581-0603ZD106KAT2A"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/AVX/0603ZD106KAT2A?qs=c1aAEamvUYHQhwHZOF6y0Q%3D%3D"/>
+      <property name="Manufacturer_Name" value="AVX"/>
+      <property name="Manufacturer_Part_Number" value="0603ZD106KAT2A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a072860-92f7-4ba7-9c37-a0f6fed78a74</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>10u</value>
+      <footprint>0603ZDD106KAT2A:CAPC1608X90N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/06031A100FAT2A.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 10uF X5R 0603 10%TOL</field>
+        <field name="Height">0.9</field>
+        <field name="Manufacturer_Name">AVX</field>
+        <field name="Manufacturer_Part_Number">0603ZD106KAT2A</field>
+        <field name="Mouser Part Number">581-0603ZD106KAT2A</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/AVX/0603ZD106KAT2A?qs=c1aAEamvUYHQhwHZOF6y0Q%3D%3D</field>
+      </fields>
+      <libsource lib="0603ZD106KAT2A" part="0603ZD106KAT2A" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 10uF X5R 0603 10%TOL"/>
+      <property name="Description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 10uF X5R 0603 10%TOL"/>
+      <property name="Height" value="0.9"/>
+      <property name="Mouser Part Number" value="581-0603ZD106KAT2A"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/AVX/0603ZD106KAT2A?qs=c1aAEamvUYHQhwHZOF6y0Q%3D%3D"/>
+      <property name="Manufacturer_Name" value="AVX"/>
+      <property name="Manufacturer_Part_Number" value="0603ZD106KAT2A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05d8aa6c-dbf6-4ed4-a8f2-8f4559594527</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>0.1u</value>
+      <footprint>0603YC104J4T4A:CAPC1608X90N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/06031A100FAT2A.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V .1uF X7R 0603 Tol 5% AEC-Q200</field>
+        <field name="Height">0.9</field>
+        <field name="Manufacturer_Name">AVX</field>
+        <field name="Manufacturer_Part_Number">0603YC104J4T4A</field>
+        <field name="Mouser Part Number">581-0603YC104J4T4A</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/AVX/0603YC104J4T4A?qs=Cej1j9ztgjFyuPBXcKRKGA%3D%3D</field>
+      </fields>
+      <libsource lib="0603YC104J4T4A" part="0603YC104J4T4A" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V .1uF X7R 0603 Tol 5% AEC-Q200"/>
+      <property name="Description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V .1uF X7R 0603 Tol 5% AEC-Q200"/>
+      <property name="Height" value="0.9"/>
+      <property name="Mouser Part Number" value="581-0603YC104J4T4A"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/AVX/0603YC104J4T4A?qs=Cej1j9ztgjFyuPBXcKRKGA%3D%3D"/>
+      <property name="Manufacturer_Name" value="AVX"/>
+      <property name="Manufacturer_Part_Number" value="0603YC104J4T4A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1b7082d6-c0ae-47f0-9eb2-e3baffca1b92</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9ac0d781-a7d7-4f55-837b-ad220709da32</tstamps>
+    </comp>
+    <comp ref="IC3">
+      <value>LD1086DT50TR</value>
+      <footprint>LD1086DT50TR:LD1086DT33TR</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/ld1086.pdf</datasheet>
+      <fields>
+        <field name="Description">STMicroelectronics LD1086DT50TR, LDO Regulator, 1.5A, 5 V 3-Pin, DPAK</field>
+        <field name="Height">2.4</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">LD1086DT50TR</field>
+        <field name="Mouser Part Number">511-LD1086DT50TR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LD1086DT50TR?qs=22WmWNTp1rokTqd3JqiONw%3D%3D</field>
+      </fields>
+      <libsource lib="LD1086DT50TR" part="LD1086DT50TR" description="STMicroelectronics LD1086DT50TR, LDO Regulator, 1.5A, 5 V 3-Pin, DPAK"/>
+      <property name="Description" value="STMicroelectronics LD1086DT50TR, LDO Regulator, 1.5A, 5 V 3-Pin, DPAK"/>
+      <property name="Height" value="2.4"/>
+      <property name="Mouser Part Number" value="511-LD1086DT50TR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LD1086DT50TR?qs=22WmWNTp1rokTqd3JqiONw%3D%3D"/>
+      <property name="Manufacturer_Name" value="STMicroelectronics"/>
+      <property name="Manufacturer_Part_Number" value="LD1086DT50TR"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0330fb28-8771-4524-af83-66ffa6aed352</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>53261-7008</value>
+      <footprint>53261-7008:532617008</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/53261-7008.pdf</datasheet>
+      <fields>
+        <field name="Description">1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Gold (Au) Plating, Friction Lock,  Circuits, Tape and Reel</field>
+        <field name="Height">3.4</field>
+        <field name="Manufacturer_Name">Molex</field>
+        <field name="Manufacturer_Part_Number">53261-7008</field>
+        <field name="Mouser Part Number">538-53261-7008</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Molex/53261-7008?qs=0lSvoLzn4L%2FGiHchImg8rw%3D%3D</field>
+      </fields>
+      <libsource lib="53261-7008" part="53261-7008" description="1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Gold (Au) Plating, Friction Lock,  Circuits, Tape and Reel"/>
+      <property name="Description" value="1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Gold (Au) Plating, Friction Lock,  Circuits, Tape and Reel"/>
+      <property name="Height" value="3.4"/>
+      <property name="Mouser Part Number" value="538-53261-7008"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Molex/53261-7008?qs=0lSvoLzn4L%2FGiHchImg8rw%3D%3D"/>
+      <property name="Manufacturer_Name" value="Molex"/>
+      <property name="Manufacturer_Part_Number" value="53261-7008"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>751f0b51-443f-4a39-9c05-b604bba86c5a</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>ZX62-B-5PA_33_</value>
+      <footprint>ZX62-B-5PA_33_:ZX62B5PA33</footprint>
+      <datasheet>https://www.hirose.com/product/download/?distributor=digikey&amp;type=specSheet&amp;lang=en&amp;num=ZX62-B-5PA(33)</datasheet>
+      <fields>
+        <field name="Description">USB Connectors MICRO B RECEPT RA SMT BTTM MNT</field>
+        <field name="Height">3</field>
+        <field name="Manufacturer_Name">Hirose</field>
+        <field name="Manufacturer_Part_Number">ZX62-B-5PA(33)</field>
+        <field name="Mouser Part Number">798-ZX62-B-5PA33</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Hirose-Connector/ZX62-B-5PA33?qs=IvjI65BR3TWOr0fx8JTXXw%3D%3D</field>
+      </fields>
+      <libsource lib="ZX62-B-5PA_33_" part="ZX62-B-5PA_33_" description="USB Connectors MICRO B RECEPT RA SMT BTTM MNT"/>
+      <property name="Description" value="USB Connectors MICRO B RECEPT RA SMT BTTM MNT"/>
+      <property name="Height" value="3"/>
+      <property name="Mouser Part Number" value="798-ZX62-B-5PA33"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Hirose-Connector/ZX62-B-5PA33?qs=IvjI65BR3TWOr0fx8JTXXw%3D%3D"/>
+      <property name="Manufacturer_Name" value="Hirose"/>
+      <property name="Manufacturer_Part_Number" value="ZX62-B-5PA(33)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4bb96e10-e894-4fe4-b53f-14bf7aae8c10</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x02_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>71df1879-5202-40c2-bb6a-e8a7a96c5250</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x02_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a123d48d-57cb-4146-ba3e-4fa29d6f51ab</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x01_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cacccb5f-65ae-490c-b51e-4855ab288701</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x02_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b27f272d-42d2-47db-aa2c-5f2e2a1ead69</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bdd33319-5007-4dae-9bf6-27b9b5e71c09</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>107e2554-f823-4cd6-b40c-20605dfc327e</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d5d617e-510f-4302-9e01-7a26026b3ae6</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3cacde7d-a426-458c-8c1e-31b7a65e717f</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>22ecdf33-da24-4553-8fa9-c37ab353b8fc</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>806eed55-b8a3-4261-af7b-6b04417c7f6a</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07fddf3b-22bb-448c-9767-290fbf0bf3a1</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bdd48317-4331-4c96-b463-de0ba3f3e6a7</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e963ccaf-64bb-4c3f-a520-8d019f39b2b0</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>42de1192-af1f-4ed0-8641-7bd8e2dd4b54</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83f51285-9f95-48d6-a6b1-8e1200250961</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>820</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>afb77ab9-2b04-42d7-bd61-3b8f603551f5</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>130</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a78855b9-c0b3-4b88-aae0-a0189c88d8a3</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>27</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4235202c-bfe1-4e73-8bcf-adf8674fcde9</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>3k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf306c7d-28f2-4a6e-93d5-121d77d91a93</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>3k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b1f21850-d0ad-4088-9d18-cad77f322bcb</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>19310cde-5e65-4919-9525-8f2ba6989c47</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>42dd0939-4f8a-432f-bbff-a0220b40c152</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>ESP32-S3-WROOM-1</value>
+      <footprint>Espressif:ESP32-S3-WROOM-1</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf</datasheet>
+      <libsource lib="Espressif" part="ESP32-S3-WROOM-1" description="2.4 GHz WiFi (802.11 b/g/n) and Bluetooth ® 5 (LE) module Built around ESP32S3 series of SoCs, Xtensa ® dualcore 32bit LX7 microprocessor Flash up to 16 MB, PSRAM up to 8 MB 36 GPIOs, rich set of peripherals Onboard PCB antenna"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1446235e-290d-4f02-8e90-45548db5e151</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>CH340E</value>
+      <footprint>Package_SO:MSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.mpja.com/download/35227cpdata.pdf</datasheet>
+      <libsource lib="Interface_USB" part="CH340E" description="USB serial converter, UART, MSOP-10"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46187a89-05d7-4dcb-aa79-aabdc24e42ec</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>LoRa_Breakout</value>
+      <footprint>custom_components:LoRa_Breakout</footprint>
+      <libsource lib="custom_components" part="LoRa_Breakout" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>16ca40cc-c29b-4528-8aa1-f82ed2f3b30f</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>MICS6814</value>
+      <footprint>chem_air_u_footprints:PLCC125P750X550X150-16N</footprint>
+      <libsource lib="custom_components" part="MICS6814" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>147e1753-1962-4634-9bd8-f6cf4db8053c</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>HDC2010YPAR</value>
+      <footprint>footprints:HDC2010YPAR</footprint>
+      <libsource lib="2022-11-07_15-59-30" part="HDC2010YPAR" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: AirU.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cebd8a3b-5762-41d2-b5b9-32fa25a7bcf3</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="0603YC104J4T4A" part="0603YC104J4T4A">
+      <description>Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V .1uF X7R 0603 Tol 5% AEC-Q200</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/06031A100FAT2A.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">0603YC104J4T4A</field>
+        <field name="Footprint">0603YC104J4T4A:CAPC1608X90N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/06031A100FAT2A.pdf</field>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V .1uF X7R 0603 Tol 5% AEC-Q200</field>
+        <field name="Height">0.9</field>
+        <field name="Mouser Part Number">581-0603YC104J4T4A</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/AVX/0603YC104J4T4A?qs=Cej1j9ztgjFyuPBXcKRKGA%3D%3D</field>
+        <field name="Manufacturer_Name">AVX</field>
+        <field name="Manufacturer_Part_Number">0603YC104J4T4A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="0603YC105KAT2A" part="0603YC105KAT2A">
+      <description>AVX - 0603YC105KAT2A - CAP, MLCC, X7R, 1UF, 16V, 0603</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YC105KAT2A#dim</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">0603YC105KAT2A</field>
+        <field name="Footprint">0603YC105KAT2A:CAPC1608X94N</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YC105KAT2A#dim</field>
+        <field name="Description">AVX - 0603YC105KAT2A - CAP, MLCC, X7R, 1UF, 16V, 0603</field>
+        <field name="Height">0.94</field>
+        <field name="Mouser Part Number">581-0603YC105KAT2A</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/AVX/0603YC105KAT2A?qs=oZHZyJ9sPsF0nYEZ1SOhJA%3D%3D</field>
+        <field name="Manufacturer_Name">AVX</field>
+        <field name="Manufacturer_Part_Number">0603YC105KAT2A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="0603ZD106KAT2A" part="0603ZD106KAT2A">
+      <description>Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 10uF X5R 0603 10%TOL</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/06031A100FAT2A.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">0603ZD106KAT2A</field>
+        <field name="Footprint">0603ZDD106KAT2A:CAPC1608X90N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/06031A100FAT2A.pdf</field>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 10uF X5R 0603 10%TOL</field>
+        <field name="Height">0.9</field>
+        <field name="Mouser Part Number">581-0603ZD106KAT2A</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/AVX/0603ZD106KAT2A?qs=c1aAEamvUYHQhwHZOF6y0Q%3D%3D</field>
+        <field name="Manufacturer_Name">AVX</field>
+        <field name="Manufacturer_Part_Number">0603ZD106KAT2A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="2022-11-07_15-59-30" part="HDC2010YPAR">
+      <footprints>
+        <fp>YPA0006ABAB</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">HDC2010YPAR</field>
+        <field name="Footprint">footprints:HDC2010YPAR</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="VDD" type="power_in"/>
+        <pin num="A2" name="SDA" type="bidirectional"/>
+        <pin num="B1" name="ADDR" type="input"/>
+        <pin num="B2" name="SCL" type="input"/>
+        <pin num="C1" name="GND" type="power_in"/>
+        <pin num="C2" name="DRDY_INT" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="53261-7008" part="53261-7008">
+      <description>1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Gold (Au) Plating, Friction Lock,  Circuits, Tape and Reel</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/53261-7008.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">53261-7008</field>
+        <field name="Footprint">53261-7008:532617008</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/53261-7008.pdf</field>
+        <field name="Description">1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Gold (Au) Plating, Friction Lock,  Circuits, Tape and Reel</field>
+        <field name="Height">3.4</field>
+        <field name="Mouser Part Number">538-53261-7008</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Molex/53261-7008?qs=0lSvoLzn4L%2FGiHchImg8rw%3D%3D</field>
+        <field name="Manufacturer_Name">Molex</field>
+        <field name="Manufacturer_Part_Number">53261-7008</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="MP1" name="MP1" type="passive"/>
+        <pin num="MP2" name="MP2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x01_Male">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Male">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Espressif" part="ESP32-S3-WROOM-1">
+      <description>2.4 GHz WiFi (802.11 b/g/n) and Bluetooth ® 5 (LE) module Built around ESP32S3 series of SoCs, Xtensa ® dualcore 32bit LX7 microprocessor Flash up to 16 MB, PSRAM up to 8 MB 36 GPIOs, rich set of peripherals Onboard PCB antenna</description>
+      <docs>https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-S3-WROOM-1</field>
+        <field name="Footprint">Espressif:ESP32-S3-WROOM-1</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="3V3" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="GPIO4/TOUCH4/ADC1_CH3" type="bidirectional"/>
+        <pin num="5" name="GPIO5/TOUCH5/ADC1_CH4" type="bidirectional"/>
+        <pin num="6" name="GPIO6/TOUCH6/ADC1_CH5" type="bidirectional"/>
+        <pin num="7" name="GPIO7/TOUCH7/ADC1_CH6" type="bidirectional"/>
+        <pin num="8" name="GPIO15/U0RTS/ADC2_CH4/XTAL_32K_P" type="bidirectional"/>
+        <pin num="9" name="GPIO16/U0CTS/ADC2_CH5/XTAL_32K_NH5" type="bidirectional"/>
+        <pin num="10" name="GPIO17/U1TXD/ADC2_CH6" type="bidirectional"/>
+        <pin num="11" name="GPIO18/U1RXD/ADC2_CH7/CLK_OUT3" type="bidirectional"/>
+        <pin num="12" name="GPIO8/TOUCH8/ADC1_CH7/SUBSPICS1" type="bidirectional"/>
+        <pin num="13" name="GPIO19/U1RTS/ADC2_CH8/CLK_OUT2/USB_D-" type="bidirectional"/>
+        <pin num="14" name="GPIO20/U1CTS/ADC2_CH9/CLK_OUT1/USB_D+" type="bidirectional"/>
+        <pin num="15" name="GPIO3/TOUCH3/ADC1_CH2" type="bidirectional"/>
+        <pin num="16" name="GPIO46" type="bidirectional"/>
+        <pin num="17" name="GPIO9/TOUCH9/ADC1_CH8/FSPIHD/SUBSPIHD" type="bidirectional"/>
+        <pin num="18" name="GPIO10/TOUCH10/ADC1_CH9/FSPICS0/FSPIIO4/SUBSPICS0" type="bidirectional"/>
+        <pin num="19" name="GPIO11/TOUCH11/ADC2_CH0/FSPID/FSPIIO5/SUBSPID" type="bidirectional"/>
+        <pin num="20" name="GPIO12/TOUCH12/ADC2_CH1/FSPICLK/FSPIIO6/SUBSPICLK" type="bidirectional"/>
+        <pin num="21" name="GPIO13/TOUCH13/ADC2_CH2/FSPIQ/FSPIIO7/SUBSPIQ" type="bidirectional"/>
+        <pin num="22" name="GPIO14/TOUCH14/ADC2_CH3/FSPIWP/FSPIDQS/SUBSPIWP" type="bidirectional"/>
+        <pin num="23" name="GPIO21" type="bidirectional"/>
+        <pin num="24" name="GPIO47/SPICLK_P/SUBSPICLK_P_DIFF" type="bidirectional"/>
+        <pin num="25" name="GPIO48/SPICLK_N/SUBSPICLK_N_DIFF" type="bidirectional"/>
+        <pin num="26" name="GPIO45" type="bidirectional"/>
+        <pin num="27" name="GPIO0/BOOT" type="bidirectional"/>
+        <pin num="28" name="SPIIO6/GPIO35/FSPID/SUBSPID" type="bidirectional"/>
+        <pin num="29" name="SPIIO7/GPIO36/FSPICLK/SUBSPICLK" type="bidirectional"/>
+        <pin num="30" name="SPIDQS/GPIO37/FSPIQ/SUBSPIQ" type="bidirectional"/>
+        <pin num="31" name="GPIO38/FSPIWP/SUBSPIWP" type="bidirectional"/>
+        <pin num="32" name="MTCK/GPIO39/CLK_OUT3/SUBSPICS1" type="bidirectional"/>
+        <pin num="33" name="MTDO/GPIO40/CLK_OUT2" type="bidirectional"/>
+        <pin num="34" name="MTDI/GPIO41/CLK_OUT1" type="bidirectional"/>
+        <pin num="35" name="MTMS/GPIO42" type="bidirectional"/>
+        <pin num="36" name="U0RXD/GPIO44/CLK_OUT2" type="bidirectional"/>
+        <pin num="37" name="U0TXD/GPIO43/CLK_OUT1" type="bidirectional"/>
+        <pin num="38" name="GPIO2/TOUCH2/ADC1_CH1" type="bidirectional"/>
+        <pin num="39" name="GPIO1/TOUCH1/ADC1_CH0" type="bidirectional"/>
+        <pin num="40" name="GND" type="power_in"/>
+        <pin num="41" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_USB" part="CH340E">
+      <description>USB serial converter, UART, MSOP-10</description>
+      <docs>https://www.mpja.com/download/35227cpdata.pdf</docs>
+      <footprints>
+        <fp>MSOP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CH340E</field>
+        <field name="Footprint">Package_SO:MSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet">https://www.mpja.com/download/35227cpdata.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="UD+" type="bidirectional"/>
+        <pin num="2" name="UD-" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="~{RTS}" type="output"/>
+        <pin num="5" name="~{CTS}" type="input"/>
+        <pin num="6" name="TNOW" type="output"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="TXD" type="output"/>
+        <pin num="9" name="RXD" type="input"/>
+        <pin num="10" name="V3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LD1086DT50TR" part="LD1086DT50TR">
+      <description>STMicroelectronics LD1086DT50TR, LDO Regulator, 1.5A, 5 V 3-Pin, DPAK</description>
+      <docs>https://www.st.com/resource/en/datasheet/ld1086.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">LD1086DT50TR</field>
+        <field name="Footprint">LD1086DT50TR:LD1086DT33TR</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/ld1086.pdf</field>
+        <field name="Description">STMicroelectronics LD1086DT50TR, LDO Regulator, 1.5A, 5 V 3-Pin, DPAK</field>
+        <field name="Height">2.4</field>
+        <field name="Mouser Part Number">511-LD1086DT50TR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LD1086DT50TR?qs=22WmWNTp1rokTqd3JqiONw%3D%3D</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">LD1086DT50TR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ADJ/GND" type="passive"/>
+        <pin num="2" name="OUTPUT" type="passive"/>
+        <pin num="3" name="INPUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ZX62-B-5PA_33_" part="ZX62-B-5PA_33_">
+      <description>USB Connectors MICRO B RECEPT RA SMT BTTM MNT</description>
+      <docs>https://www.hirose.com/product/download/?distributor=digikey&amp;type=specSheet&amp;lang=en&amp;num=ZX62-B-5PA(33)</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">ZX62-B-5PA_33_</field>
+        <field name="Footprint">ZX62-B-5PA_33_:ZX62B5PA33</field>
+        <field name="Datasheet">https://www.hirose.com/product/download/?distributor=digikey&amp;type=specSheet&amp;lang=en&amp;num=ZX62-B-5PA(33)</field>
+        <field name="Description">USB Connectors MICRO B RECEPT RA SMT BTTM MNT</field>
+        <field name="Height">3</field>
+        <field name="Mouser Part Number">798-ZX62-B-5PA33</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Hirose-Connector/ZX62-B-5PA33?qs=IvjI65BR3TWOr0fx8JTXXw%3D%3D</field>
+        <field name="Manufacturer_Name">Hirose</field>
+        <field name="Manufacturer_Part_Number">ZX62-B-5PA(33)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="MP1" name="MP1" type="passive"/>
+        <pin num="MP2" name="MP2" type="passive"/>
+        <pin num="MP3" name="MP3" type="passive"/>
+        <pin num="MP4" name="MP4" type="passive"/>
+        <pin num="MP5" name="MP5" type="passive"/>
+        <pin num="MP6" name="MP6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="custom_components" part="LoRa_Breakout">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LoRa_Breakout</field>
+        <field name="Footprint">custom_components:LoRa_Breakout</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vin" type="power_in"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="G0" type="bidirectional"/>
+        <pin num="5" name="SCK" type="input"/>
+        <pin num="6" name="MISO" type="input"/>
+        <pin num="7" name="MOSI" type="output"/>
+        <pin num="8" name="CS" type="input"/>
+        <pin num="9" name="RST" type="bidirectional"/>
+        <pin num="10" name="G1" type="bidirectional"/>
+        <pin num="11" name="G2" type="bidirectional"/>
+        <pin num="12" name="G3" type="bidirectional"/>
+        <pin num="13" name="G4" type="bidirectional"/>
+        <pin num="14" name="G5" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="custom_components" part="MICS6814">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MICS6814</field>
+        <field name="Footprint">chem_air_u_footprints:PLCC125P750X550X150-16N</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="output"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="power_in"/>
+        <pin num="4" name="D" type="output"/>
+        <pin num="5" name="E" type="power_in"/>
+        <pin num="6" name="F" type="passive"/>
+        <pin num="7" name="G" type="power_in"/>
+        <pin num="8" name="H" type="output"/>
+        <pin num="9" name="J" type="passive"/>
+        <pin num="10" name="K" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="0603YC104J4T4A">
+      <uri>/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_0603YC104J4T4A/0603YC104J4T4A/KiCad/0603YC104J4T4A.kicad_sym</uri>
+    </library>
+    <library logical="0603YC105KAT2A">
+      <uri>/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_0603YC105KAT2A/0603YC105KAT2A/KiCad/0603YC105KAT2A.kicad_sym</uri>
+    </library>
+    <library logical="0603ZD106KAT2A">
+      <uri>/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_0603ZD106KAT2A/0603ZD106KAT2A/KiCad/0603ZD106KAT2A.kicad_sym</uri>
+    </library>
+    <library logical="2022-11-07_15-59-30">
+      <uri>/Users/michael/Documents/Senior_Project/PCB/proj_libraries/ul_HDC2010YPAR/KiCAD/2022-11-07_15-59-30/2022-11-07_15-59-30.kicad_sym</uri>
+    </library>
+    <library logical="53261-7008">
+      <uri>/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_53261-7008/53261-7008/KiCad/53261-7008.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Espressif">
+      <uri>/Users/michael/Documents/Senior_Project/PCB/proj_libraries/libraries/kicad-libraries/libraries/Espressif.kicad_sym</uri>
+    </library>
+    <library logical="Interface_USB">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Interface_USB.kicad_sym</uri>
+    </library>
+    <library logical="LD1086DT50TR">
+      <uri>/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_LD1086DT50TR/LD1086DT50TR/KiCad/LD1086DT50TR.kicad_sym</uri>
+    </library>
+    <library logical="ZX62-B-5PA_33_">
+      <uri>/Users/michael/Documents/Senior_Project/PCB/proj_libraries/LIB_ZX62-B-5PA_33_/ZX62-B-5PA_33_/KiCad/ZX62-B-5PA_33_.kicad_sym</uri>
+    </library>
+    <library logical="custom_components">
+      <uri>/Users/michael/Documents/Senior_Project/PCB/custom_components.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/D+">
+      <node ref="J2" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="UD+" pintype="bidirectional"/>
+    </net>
+    <net code="2" name="/D-">
+      <node ref="J2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="UD-" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="/GPIO0">
+      <node ref="U1" pin="27" pinfunction="GPIO0/BOOT" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/GPIO1">
+      <node ref="U1" pin="39" pinfunction="GPIO1/TOUCH1/ADC1_CH0" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/GPIO2">
+      <node ref="U1" pin="38" pinfunction="GPIO2/TOUCH2/ADC1_CH1" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/GPIO3">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="GPIO3/TOUCH3/ADC1_CH2" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/GPIO4">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="GPIO4/TOUCH4/ADC1_CH3" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/GPIO5">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="GPIO5/TOUCH5/ADC1_CH4" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/GPIO6">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="GPIO6/TOUCH6/ADC1_CH5" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/GPIO7">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="GPIO7/TOUCH7/ADC1_CH6" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/GPIO8">
+      <node ref="U1" pin="12" pinfunction="GPIO8/TOUCH8/ADC1_CH7/SUBSPICS1" pintype="bidirectional"/>
+      <node ref="U4" pin="8" pinfunction="H" pintype="output"/>
+    </net>
+    <net code="12" name="/GPIO9">
+      <node ref="U1" pin="17" pinfunction="GPIO9/TOUCH9/ADC1_CH8/FSPIHD/SUBSPIHD" pintype="bidirectional"/>
+      <node ref="U4" pin="4" pinfunction="D" pintype="output"/>
+    </net>
+    <net code="13" name="/GPIO10">
+      <node ref="U1" pin="18" pinfunction="GPIO10/TOUCH10/ADC1_CH9/FSPICS0/FSPIIO4/SUBSPICS0" pintype="bidirectional"/>
+      <node ref="U4" pin="1" pinfunction="A" pintype="output"/>
+    </net>
+    <net code="14" name="/GPIO11">
+      <node ref="U1" pin="19" pinfunction="GPIO11/TOUCH11/ADC2_CH0/FSPID/FSPIIO5/SUBSPID" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/GPIO12">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="GPIO12/TOUCH12/ADC2_CH1/FSPICLK/FSPIIO6/SUBSPICLK" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/GPIO13">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="GPIO13/TOUCH13/ADC2_CH2/FSPIQ/FSPIIO7/SUBSPIQ" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="/GPIO14">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="GPIO14/TOUCH14/ADC2_CH3/FSPIWP/FSPIDQS/SUBSPIWP" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/GPIO15">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="GPIO15/U0RTS/ADC2_CH4/XTAL_32K_P" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="/GPIO16">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="GPIO16/U0CTS/ADC2_CH5/XTAL_32K_NH5" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/GPIO17">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="GPIO17/U1TXD/ADC2_CH6" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/GPIO18">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="GPIO18/U1RXD/ADC2_CH7/CLK_OUT3" pintype="bidirectional"/>
+      <node ref="U5" pin="A2" pinfunction="SDA" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="/GPIO19">
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GPIO19/U1RTS/ADC2_CH8/CLK_OUT2/USB_D-" pintype="bidirectional"/>
+      <node ref="U5" pin="B2" pinfunction="SCL" pintype="input"/>
+    </net>
+    <net code="23" name="/GPIO20">
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="GPIO20/U1CTS/ADC2_CH9/CLK_OUT1/USB_D+" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="/GPIO21">
+      <node ref="U1" pin="23" pinfunction="GPIO21" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/GPIO35">
+      <node ref="U1" pin="28" pinfunction="SPIIO6/GPIO35/FSPID/SUBSPID" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="/GPIO36">
+      <node ref="U1" pin="29" pinfunction="SPIIO7/GPIO36/FSPICLK/SUBSPICLK" pintype="bidirectional"/>
+      <node ref="U5" pin="C2" pinfunction="DRDY_INT" pintype="output"/>
+    </net>
+    <net code="27" name="/GPIO37">
+      <node ref="U1" pin="30" pinfunction="SPIDQS/GPIO37/FSPIQ/SUBSPIQ" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="/GPIO38">
+      <node ref="U1" pin="31" pinfunction="GPIO38/FSPIWP/SUBSPIWP" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="/GPIO39">
+      <node ref="U1" pin="32" pinfunction="MTCK/GPIO39/CLK_OUT3/SUBSPICS1" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="/GPIO40">
+      <node ref="U1" pin="33" pinfunction="MTDO/GPIO40/CLK_OUT2" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="/GPIO41">
+      <node ref="U1" pin="34" pinfunction="MTDI/GPIO41/CLK_OUT1" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="/GPIO42">
+      <node ref="U1" pin="35" pinfunction="MTMS/GPIO42" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="/GPIO45">
+      <node ref="J1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="U1" pin="26" pinfunction="GPIO45" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="/GPIO46">
+      <node ref="J1" pin="6" pinfunction="6" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="GPIO46" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="/GPIO47">
+      <node ref="U1" pin="24" pinfunction="GPIO47/SPICLK_P/SUBSPICLK_P_DIFF" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="/GPIO48">
+      <node ref="J1" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="U1" pin="25" pinfunction="GPIO48/SPICLK_N/SUBSPICLK_N_DIFF" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="/LORA_DIO0">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="G0" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="/LORA_DIO1">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="G1" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="/LORA_DIO2">
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U3" pin="11" pinfunction="G2" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="/LORA_DIO3">
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U3" pin="12" pinfunction="G3" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="/LORA_DIO4">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U3" pin="13" pinfunction="G4" pintype="bidirectional"/>
+    </net>
+    <net code="42" name="/LORA_DIO5">
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U3" pin="14" pinfunction="G5" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="/LORA_MISO">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="MISO" pintype="input"/>
+    </net>
+    <net code="44" name="/LORA_MOSI">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="MOSI" pintype="output"/>
+    </net>
+    <net code="45" name="/LORA_NSS">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="CS" pintype="input"/>
+    </net>
+    <net code="46" name="/LORA_RST">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="RST" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="/LORA_SCLK">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="SCK" pintype="input"/>
+    </net>
+    <net code="48" name="/U0RXD">
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="36" pinfunction="U0RXD/GPIO44/CLK_OUT2" pintype="bidirectional"/>
+      <node ref="U2" pin="8" pinfunction="TXD" pintype="output"/>
+    </net>
+    <net code="49" name="/U0TXD">
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U1" pin="37" pinfunction="U0TXD/GPIO43/CLK_OUT1" pintype="bidirectional"/>
+      <node ref="U2" pin="9" pinfunction="RXD" pintype="input"/>
+    </net>
+    <net code="50" name="GND">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="IC3" pin="1" pinfunction="ADJ/GND" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="J1" pin="MP1" pinfunction="MP1" pintype="passive"/>
+      <node ref="J1" pin="MP2" pinfunction="MP2" pintype="passive"/>
+      <node ref="J2" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="J2" pin="MP1" pinfunction="MP1" pintype="passive"/>
+      <node ref="J2" pin="MP2" pinfunction="MP2" pintype="passive"/>
+      <node ref="J2" pin="MP3" pinfunction="MP3" pintype="passive"/>
+      <node ref="J2" pin="MP4" pinfunction="MP4" pintype="passive"/>
+      <node ref="J2" pin="MP5" pinfunction="MP5" pintype="passive"/>
+      <node ref="J2" pin="MP6" pinfunction="MP6" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="40" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="41" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="4" pinfunction="~{RTS}" pintype="output"/>
+      <node ref="U2" pin="5" pinfunction="~{CTS}" pintype="input"/>
+      <node ref="U3" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="F" pintype="passive"/>
+      <node ref="U4" pin="9" pinfunction="J" pintype="passive"/>
+      <node ref="U5" pin="B1" pinfunction="ADDR" pintype="input"/>
+      <node ref="U5" pin="C1" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="51" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="TNOW" pintype="output"/>
+    </net>
+    <net code="52" name="Net-(R12-Pad1)">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U4" pin="5" pinfunction="E" pintype="power_in"/>
+      <node ref="U4" pin="7" pinfunction="G" pintype="power_in"/>
+    </net>
+    <net code="53" name="Net-(R13-Pad2)">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U4" pin="10" pinfunction="K" pintype="power_in"/>
+    </net>
+    <net code="54" name="Net-(R14-Pad1)">
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="C" pintype="power_in"/>
+    </net>
+    <net code="55" name="VCC">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="IC3" pin="3" pinfunction="INPUT" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+    </net>
+    <net code="56" name="VDD">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="IC3" pin="2" pinfunction="OUTPUT" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="3V3" pintype="power_in"/>
+      <node ref="U1" pin="3" pinfunction="EN" pintype="input"/>
+      <node ref="U2" pin="10" pinfunction="V3" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U3" pin="1" pinfunction="Vin" pintype="power_in"/>
+      <node ref="U3" pin="3" pinfunction="EN" pintype="input"/>
+      <node ref="U5" pin="A1" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="57" name="unconnected-(J1-Pad4)">
+      <node ref="J1" pin="4" pinfunction="4" pintype="passive"/>
+    </net>
+    <net code="58" name="unconnected-(J1-Pad7)">
+      <node ref="J1" pin="7" pinfunction="7" pintype="passive"/>
+    </net>
+    <net code="59" name="unconnected-(J1-Pad8)">
+      <node ref="J1" pin="8" pinfunction="8" pintype="passive"/>
+    </net>
+    <net code="60" name="unconnected-(J2-Pad4)">
+      <node ref="J2" pin="4" pinfunction="4" pintype="passive"/>
+    </net>
+  </nets>
+</export>

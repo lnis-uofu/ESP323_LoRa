@@ -16,7 +16,7 @@ void task_tx(void *p)
    for(;;) {
       vTaskDelay(pdMS_TO_TICKS(1000));
       ESP_LOGI(TAG, "Sending Packet...\n");
-      lora_send_packet((uint8_t*)"Hello", 5);
+      lora_send_packet((uint8_t*)"12345678", 32);
       
    }
 }
@@ -31,8 +31,8 @@ void app_main()
    //lora_set_frequency(905300000);
    lora_set_frequency(927500000);
    //lora_set_frequency(923300000);
-   lora_set_spreading_factor(7);
-   lora_set_bandwidth(500000);
+   //lora_set_spreading_factor(7);
+   //lora_set_bandwidth(500000);
    lora_enable_crc();
    xTaskCreate(&task_tx, "task_tx", 2048, NULL, 5, NULL);
 }

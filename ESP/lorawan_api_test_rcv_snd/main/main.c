@@ -173,7 +173,7 @@ void app_main( void )
     
     //Radio.SetChannel( RF_FREQUENCY );
     //Radio.SetChannel( 905300000 );
-    Radio.SetChannel(927500000);
+    //Radio.SetChannel(915000000);
     //Radio.SetChannel(923300000);
     //Radio.SetChannel(927500000); // here for debugging LoRaWAN
     
@@ -187,21 +187,21 @@ void app_main( void )
                                    true, 0, 0, LORA_IQ_INVERSION_ON, 3000 );
     */
     
-    /*
+    
     Radio.SetRxConfig( MODEM_LORA, LORA_BANDWIDTH, LORA_SPREADING_FACTOR,
                                    LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
                                    LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
                                    0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
-                                   */
-    Radio.SetRxConfig( MODEM_LORA, 0, 7,
+                                   
+    /*Radio.SetRxConfig( MODEM_LORA, 0, 7,
                                    LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
                                    LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
-                                   0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
+                                   0, true, 0, 0, LORA_IQ_INVERSION_ON, true );*/
     
 
     Radio.SetMaxPayloadLength( MODEM_LORA, BUFFER_SIZE );
     
-    Radio.SetChannel(927500000);
+    Radio.SetChannel(915000000);
 
 #else
     #error "Please define a frequency band in the compiler options."
@@ -242,7 +242,7 @@ void app_main( void )
     {
         //Radio.Rx( RX_TIMEOUT_VALUE );
         Radio.Rx( 0 );
-        //DelayMs(1);
+        DelayMs(1);
         //Radio.Send( Buffer, BufferSize );
         //ESP_LOGI(TAG, "after send");
         

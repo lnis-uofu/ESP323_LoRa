@@ -173,7 +173,7 @@ void app_main( void )
     
     //Radio.SetChannel( RF_FREQUENCY );
     //Radio.SetChannel( 905300000 );
-    Radio.SetChannel(927500000);
+    //Radio.SetChannel(927500000);
     //Radio.SetChannel(923300000);
     //Radio.SetChannel(927500000); // here for debugging LoRaWAN
     

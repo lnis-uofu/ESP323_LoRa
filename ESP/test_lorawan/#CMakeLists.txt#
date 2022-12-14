@@ -30,7 +30,6 @@ set(EXTRA_COMPONENT_DIRS components)
 
 add_compile_definitions(DEV_NONCE_MACRO=${dev_nonce})
 
-
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 #include(/Users/michael/esp/esp-idf/tools/cmake/project.cmake)
 
